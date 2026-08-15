@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ATLAS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/database/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/repositories/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/repositories/user_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/user_routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/user_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/security/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/security/password.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/user_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000000396718" />
+      <entry key="S5" value="1.0003277239542632" />
+      <entry key="S10" value="1.0314365485791506" />
+      <entry key="S30" value="1.71425727053269" />
+      <entry key="S60" value="2.6479331884351818" />
+      <entry key="M2" value="3.6407379598272662" />
+      <entry key="M5" value="5.355656756666694" />
+      <entry key="M10" value="7.276500505406042" />
+      <entry key="M15" value="8.618955005007571" />
+      <entry key="M30" value="11.596115369437276" />
+      <entry key="H1" value="19.07927309159571" />
+      <entry key="H2" value="41.29876427791854" />
+      <entry key="H4" value="75.20380445669008" />
+      <entry key="D1" value="135.11610901273986" />
+      <entry key="W1" value="150.2886354682331" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="2.1415058956778057E-186" />
+      <entry key="MS500" value="7.347572074260126E-38" />
+      <entry key="S2" value="5.206381221416175E-10" />
+      <entry key="S5" value="1.9354108064941576E-4" />
+      <entry key="S10" value="0.014175341943998988" />
+      <entry key="S30" value="0.3063947181023529" />
+      <entry key="S60" value="0.8015239159685268" />
+      <entry key="M2" value="1.6339481639349236" />
+      <entry key="M5" value="3.7004602016557757" />
+      <entry key="M10" value="5.994753427811006" />
+      <entry key="M15" value="7.466580645725024" />
+      <entry key="M30" value="10.251980047699394" />
+      <entry key="H1" value="13.518167355430895" />
+      <entry key="H2" value="17.193904224904934" />
+      <entry key="H4" value="20.711805779069437" />
+      <entry key="D1" value="25.655331735522275" />
+      <entry key="W1" value="26.79865281230687" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1895297890538965E-78" />
+      <entry key="MS500" value="2.6006090197290544E-16" />
+      <entry key="S2" value="1.2699055914318895E-4" />
+      <entry key="S5" value="0.02813207679401175" />
+      <entry key="S10" value="0.21071620714368833" />
+      <entry key="S30" value="1.5608785087999204" />
+      <entry key="S60" value="3.177779041989979" />
+      <entry key="M2" value="5.122143100578458" />
+      <entry key="M5" value="8.983929368741121" />
+      <entry key="M10" value="13.228697102980107" />
+      <entry key="M15" value="16.054135865202074" />
+      <entry key="M30" value="21.829199372897065" />
+      <entry key="H1" value="32.58602501339821" />
+      <entry key="H2" value="58.48594162734617" />
+      <entry key="H4" value="95.91180858912645" />
+      <entry key="D1" value="160.7707127009738" />
+      <entry key="W1" value="177.087181279234" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Hw2KvN8FVyFKi538P0qCHvOJs6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.connection.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend\app" />
+      <recent name="C:\Users\isaia\PycharmProjects\ATLAS" />
+      <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ATLAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/app/database" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/database/connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.connection" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="" />
+      <created>1786764749497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786764749497</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
