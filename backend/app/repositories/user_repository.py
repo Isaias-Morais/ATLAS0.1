@@ -19,6 +19,10 @@ def get_all_users(db: Session):
     return db.query(User).all()
 
 
+def get_user_by_email(db: Session, email: str):
+    return db.query(User).filter(User.email == email).first()
+
+
 def update_user(
     db: Session,
     user: User,
@@ -37,3 +41,4 @@ def update_user(
 def delete_user(db: Session, user: User):
     db.delete(user)
     db.commit()
+

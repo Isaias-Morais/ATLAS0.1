@@ -5,32 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ATLAS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/database/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/database/connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/repositories/user_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/routes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/routes/user_routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/schemas/user_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/security/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/security/password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/services/user_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/reminder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/repositories/reminder_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/auth_routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/reminder_routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/auth_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/reminder_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/security/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/security/jwt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/auth_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/reminder_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/repositories/user_repository.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,59 +40,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000000000396718" />
-      <entry key="S5" value="1.0003277239542632" />
-      <entry key="S10" value="1.0314365485791506" />
-      <entry key="S30" value="1.71425727053269" />
-      <entry key="S60" value="2.6479331884351818" />
-      <entry key="M2" value="3.6407379598272662" />
-      <entry key="M5" value="5.355656756666694" />
-      <entry key="M10" value="7.276500505406042" />
-      <entry key="M15" value="8.618955005007571" />
-      <entry key="M30" value="11.596115369437276" />
-      <entry key="H1" value="19.07927309159571" />
-      <entry key="H2" value="41.29876427791854" />
-      <entry key="H4" value="75.20380445669008" />
-      <entry key="D1" value="135.11610901273986" />
-      <entry key="W1" value="150.2886354682331" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.000000000000006" />
+      <entry key="S30" value="1.000018093110827" />
+      <entry key="S60" value="1.0042540984560921" />
+      <entry key="M2" value="1.066958807426282" />
+      <entry key="M5" value="1.6147485163130693" />
+      <entry key="M10" value="3.761659991295475" />
+      <entry key="M15" value="7.277273306807699" />
+      <entry key="M30" value="19.91379347763262" />
+      <entry key="H1" value="39.88546494779048" />
+      <entry key="H2" value="70.48913242548095" />
+      <entry key="H4" value="111.84346998303619" />
+      <entry key="D1" value="188.1535221537529" />
+      <entry key="W1" value="208.35412349098928" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.1415058956778057E-186" />
-      <entry key="MS500" value="7.347572074260126E-38" />
-      <entry key="S2" value="5.206381221416175E-10" />
-      <entry key="S5" value="1.9354108064941576E-4" />
-      <entry key="S10" value="0.014175341943998988" />
-      <entry key="S30" value="0.3063947181023529" />
-      <entry key="S60" value="0.8015239159685268" />
-      <entry key="M2" value="1.6339481639349236" />
-      <entry key="M5" value="3.7004602016557757" />
-      <entry key="M10" value="5.994753427811006" />
-      <entry key="M15" value="7.466580645725024" />
-      <entry key="M30" value="10.251980047699394" />
-      <entry key="H1" value="13.518167355430895" />
-      <entry key="H2" value="17.193904224904934" />
-      <entry key="H4" value="20.711805779069437" />
-      <entry key="D1" value="25.655331735522275" />
-      <entry key="W1" value="26.79865281230687" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.080242075781333E-208" />
+      <entry key="S5" value="9.895413335771848E-84" />
+      <entry key="S10" value="3.145697591277942E-42" />
+      <entry key="S30" value="1.4652376671516505E-14" />
+      <entry key="S60" value="1.217978575353022E-7" />
+      <entry key="M2" value="4.221944663523517E-4" />
+      <entry key="M5" value="0.11789462909881306" />
+      <entry key="M10" value="1.0343603907309649" />
+      <entry key="M15" value="2.3557672505446505" />
+      <entry key="M30" value="6.385906183027116" />
+      <entry key="H1" value="12.33990738582362" />
+      <entry key="H2" value="19.05999017901867" />
+      <entry key="H4" value="25.205416846159117" />
+      <entry key="D1" value="33.687701633067775" />
+      <entry key="W1" value="35.65326970407887" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1895297890538965E-78" />
-      <entry key="MS500" value="2.6006090197290544E-16" />
-      <entry key="S2" value="1.2699055914318895E-4" />
-      <entry key="S5" value="0.02813207679401175" />
-      <entry key="S10" value="0.21071620714368833" />
-      <entry key="S30" value="1.5608785087999204" />
-      <entry key="S60" value="3.177779041989979" />
-      <entry key="M2" value="5.122143100578458" />
-      <entry key="M5" value="8.983929368741121" />
-      <entry key="M10" value="13.228697102980107" />
-      <entry key="M15" value="16.054135865202074" />
-      <entry key="M30" value="21.829199372897065" />
-      <entry key="H1" value="32.58602501339821" />
-      <entry key="H2" value="58.48594162734617" />
-      <entry key="H4" value="95.91180858912645" />
-      <entry key="D1" value="160.7707127009738" />
-      <entry key="W1" value="177.087181279234" />
+      <entry key="MS100" value="0.9330329915368074" />
+      <entry key="MS500" value="0.9862327044933592" />
+      <entry key="S2" value="0.9965402628278678" />
+      <entry key="S5" value="0.9986146661010289" />
+      <entry key="S10" value="0.9993070929904585" />
+      <entry key="S30" value="0.9997870678143911" />
+      <entry key="S60" value="1.0041383482246569" />
+      <entry key="M2" value="1.0673019203568204" />
+      <entry key="M5" value="1.7313951747538312" />
+      <entry key="M10" value="4.791897373287806" />
+      <entry key="M15" value="9.62701006140662" />
+      <entry key="M30" value="26.29130816705306" />
+      <entry key="H1" value="52.21705296435488" />
+      <entry key="H2" value="89.54273410095594" />
+      <entry key="H4" value="137.04475652190283" />
+      <entry key="D1" value="221.840338774646" />
+      <entry key="W1" value="244.00726059426057" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -132,6 +121,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
