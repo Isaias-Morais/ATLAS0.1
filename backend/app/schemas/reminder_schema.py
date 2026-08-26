@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from pydantic import BaseModel
 
 
@@ -17,3 +16,11 @@ class ReminderResponse(BaseModel):
     remind_at: datetime
     completed: bool
     created_at: datetime
+
+
+
+class ReminderUpdate(BaseModel):
+    title: str
+    description: str | None = None
+    remind_at: datetime
+    completed: bool
