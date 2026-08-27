@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="">
+    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="remider completo">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/repositories/reminder_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/repositories/reminder_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/routes/reminder_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/reminder_routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/reminder_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/reminder_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/services/reminder_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/reminder_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -40,61 +38,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="4.120380621777796E-17" />
-      <entry key="MS500" value="5.284300022098217E-4" />
-      <entry key="S2" value="0.15161663960131785" />
-      <entry key="S5" value="0.470217455144155" />
-      <entry key="S10" value="0.6857240371649087" />
-      <entry key="S30" value="0.8820114274594891" />
-      <entry key="S60" value="0.9617147572663919" />
-      <entry key="M2" value="1.2369449798462973" />
-      <entry key="M5" value="3.270873975075425" />
-      <entry key="M10" value="10.672614900462603" />
-      <entry key="M15" value="19.33976915881653" />
-      <entry key="M30" value="42.690042319720995" />
-      <entry key="H1" value="75.98352998005343" />
-      <entry key="H2" value="119.07557320815883" />
-      <entry key="H4" value="171.2242967073177" />
-      <entry key="D1" value="267.2817216338541" />
-      <entry key="W1" value="293.27918397854586" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000000002" />
+      <entry key="S2" value="1.0001206836123946" />
+      <entry key="S5" value="1.0273882993798287" />
+      <entry key="S10" value="1.1874809369556356" />
+      <entry key="S30" value="2.3094622025262046" />
+      <entry key="S60" value="4.034675450690166" />
+      <entry key="M2" value="6.059047858417072" />
+      <entry key="M5" value="8.091748381091284" />
+      <entry key="M10" value="8.994109382134113" />
+      <entry key="M15" value="9.510168642686294" />
+      <entry key="M30" value="13.685827567618126" />
+      <entry key="H1" value="33.17931852260747" />
+      <entry key="H2" value="76.967053941407" />
+      <entry key="H4" value="140.60889956306568" />
+      <entry key="D1" value="273.21338102149883" />
+      <entry key="W1" value="311.8677750865518" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000136001708" />
-      <entry key="S10" value="1.0001166197712827" />
-      <entry key="S30" value="1.0490619757933337" />
-      <entry key="S60" value="1.2451755080704088" />
-      <entry key="M2" value="1.7582062244630063" />
-      <entry key="M5" value="3.381166131010329" />
-      <entry key="M10" value="5.479189014918266" />
-      <entry key="M15" value="7.038829289831033" />
-      <entry key="M30" value="10.790538271187627" />
-      <entry key="H1" value="17.05529270197117" />
-      <entry key="H2" value="25.383841314253864" />
-      <entry key="H4" value="33.648847247788154" />
-      <entry key="D1" value="45.63988697859956" />
-      <entry key="W1" value="48.49389294986899" />
+      <entry key="MS100" value="2.4716194553143364E-91" />
+      <entry key="MS500" value="7.561297417505739E-19" />
+      <entry key="S2" value="2.9488827765251335E-5" />
+      <entry key="S5" value="0.015612955121081967" />
+      <entry key="S10" value="0.1383202399630343" />
+      <entry key="S30" value="0.7408723279332743" />
+      <entry key="S60" value="1.1982484402938223" />
+      <entry key="M2" value="1.5418070989459787" />
+      <entry key="M5" value="1.8005503013824598" />
+      <entry key="M10" value="1.9001869459168736" />
+      <entry key="M15" value="1.9742469644915401" />
+      <entry key="M30" value="2.8032083845463482" />
+      <entry key="H1" value="6.753993308248304" />
+      <entry key="H2" value="15.524053035288635" />
+      <entry key="H4" value="26.79720213597022" />
+      <entry key="D1" value="46.108066050401945" />
+      <entry key="W1" value="51.10076087843444" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.5724394843074952E-12" />
-      <entry key="MS500" value="0.004809198406839291" />
-      <entry key="S2" value="0.2775300780156076" />
-      <entry key="S5" value="0.7687191967248101" />
-      <entry key="S10" value="1.1928565709419034" />
-      <entry key="S30" value="1.7161125754871485" />
-      <entry key="S60" value="2.0887995868824785" />
-      <entry key="M2" value="2.9276374836501375" />
-      <entry key="M5" value="6.615647313867924" />
-      <entry key="M10" value="16.1281747843388" />
-      <entry key="M15" value="26.360053849652065" />
-      <entry key="M30" value="53.46735673082689" />
-      <entry key="H1" value="93.02832439024692" />
-      <entry key="H2" value="144.45149111826868" />
-      <entry key="H4" value="204.86790479305407" />
-      <entry key="D1" value="312.9204458302519" />
-      <entry key="W1" value="341.7729013903741" />
+      <entry key="MS100" value="0.2716837156315145" />
+      <entry key="MS500" value="0.7705711083584078" />
+      <entry key="S2" value="0.9370079551470093" />
+      <entry key="S5" value="1.0090495299236601" />
+      <entry key="S10" value="1.2806175007400382" />
+      <entry key="S30" value="2.9692341289510114" />
+      <entry key="S60" value="5.147860545571866" />
+      <entry key="M2" value="7.534946126067603" />
+      <entry key="M5" value="9.857274420589789" />
+      <entry key="M10" value="10.874959796210625" />
+      <entry key="M15" value="11.4709409310972" />
+      <entry key="M30" value="16.480879612881502" />
+      <entry key="H1" value="39.926490844206825" />
+      <entry key="H2" value="92.48478143914662" />
+      <entry key="H4" value="167.40113007546498" />
+      <entry key="D1" value="319.32012736385036" />
+      <entry key="W1" value="362.9683299245195" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -106,27 +104,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.connection.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/isaia/PycharmProjects/ATLAS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend\app" />
@@ -159,16 +161,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.connection" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.341" />
       </set>
     </attachedChunks>
   </component>
@@ -179,20 +176,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1786764749497</updated>
+      <workItem from="1787799014390" duration="4942000" />
     </task>
+    <task id="LOCAL-00001" summary="remider completo">
+      <option name="closed" value="true" />
+      <created>1787780912723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1787780912723</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/backend/app/repositories/reminder_repository.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remider completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="remider completo" />
   </component>
 </project>
