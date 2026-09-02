@@ -1,21 +1,15 @@
-from backend.app.services.reminder_service import create_reminder_service
+from backend.app.schemas.command import CommandSchema
 
 
 class Dispatcher:
 
-    def dispatch(self, command, db):
+    def dispatcher(self, command:CommandSchema):
 
-        if command["type"] == "lembrete":
+        if command.type == "lembrete":
 
-            match command["action"]:
+            match command.action:
                 case "criar":
-                    return create_reminder_service(
-                        db=db,
-                        user_id=command["user_id"],
-                        title=command["title"],
-                        description=command["description"],
-                        remind_at=command["remind_at"]
-                    )
+                    print("Criar lembrete")
 
                 case "listar":
                     print("Listar lembretes")
@@ -25,6 +19,3 @@ class Dispatcher:
 
                 case "deletar":
                     print("Deletar lembrete")
-
-
-w
