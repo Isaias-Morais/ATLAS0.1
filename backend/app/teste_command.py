@@ -1,14 +1,13 @@
-from backend.app.schemas.command import CommandSchema
+from backend.app.interpreter.interpreter import Interpreter
 
 
-command = CommandSchema(
-    type="lembrete",
-    action="criar",
-    data={
-        "title": "Estudar Python",
-        "remind_at": "2026-09-05T15:00:00"
-    }
+interpreter = Interpreter()
+
+command = interpreter.interpret(
+    "criar lembrete estudar python amanhã às 15:00"
 )
 
 print(command)
-print(command.data)
+print(command.data.title)
+print(command.data.remind_at)
+

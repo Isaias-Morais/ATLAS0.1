@@ -8,15 +8,15 @@ from backend.app.repositories.reminder_repository import create_reminder, get_re
     delete_reminder, get_reminders_by_user
 from backend.app.repositories.user_repository import get_user_by_id
 
+from backend.app.schemas.command_scherma import ReminderCommandData, CommandSchema
 
 
 def create_reminder_service(
     db: Session,
     user_id: int,
-    title: str,
-    description: str | None,
-    remind_at: datetime
+    command:CommandSchema
 ):
+
     user = get_user_by_id(db, user_id)
 
     if user is None:
@@ -25,13 +25,14 @@ def create_reminder_service(
             detail="Usuário não encontrado"
         )
 
+
+
     reminder = Reminder(
         user_id=user_id,
-        title=title,
-        description=description,
-        remind_at=remind_at
+        title=command.data.title,
+        remind_at=command.data.remind_at
     )
-
+ 
     return create_reminder(db, reminder)
 
 

@@ -1,15 +1,27 @@
-from backend.app.schemas.command import CommandSchema
+from sqlalchemy.orm import session
 
+from backend.app.models import user
+from backend.app.schemas.command_scherma import CommandSchema
+from backend.app.services.reminder_service import create_reminder_service
 
 class Dispatcher:
 
-    def dispatcher(self, command:CommandSchema):
+    def __init__(self, reminder_service=None):
+        self.reminder_service = reminder_service
+
+    def dispatch(self,db:session, command:CommandSchema,user_id:int):
 
         if command.type == "lembrete":
 
             match command.action:
+
                 case "criar":
-                    print("Criar lembrete")
+                    return create_reminder_service(
+                        db=db,
+                        user_id=user_id,
+                        command=command
+                    )
+
 
                 case "listar":
                     print("Listar lembretes")
@@ -19,3 +31,4 @@ class Dispatcher:
 
                 case "deletar":
                     print("Deletar lembrete")
+

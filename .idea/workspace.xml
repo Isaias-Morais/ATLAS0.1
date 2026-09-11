@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="comecando front">
-      <change afterPath="$PROJECT_DIR$/backend/app/interpreter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/teste_command.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/command.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/routes/command_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/command_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/schemas/command.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/services/reminder_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/reminder_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/teste_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/teste_command.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,61 +45,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.464119893251402E-294" />
-      <entry key="S5" value="2.4119718486366784E-117" />
-      <entry key="S10" value="1.862900231706033E-58" />
-      <entry key="S30" value="3.510431429757637E-19" />
-      <entry key="S60" value="2.6493765577373183E-9" />
-      <entry key="M2" value="2.8456611099529416E-4" />
-      <entry key="M5" value="0.34949522072057254" />
-      <entry key="M10" value="4.2438052344995665" />
-      <entry key="M15" value="10.827463222371724" />
-      <entry key="M30" value="34.03835207276471" />
-      <entry key="H1" value="74.74478792866047" />
-      <entry key="H2" value="135.64684403407702" />
-      <entry key="H4" value="225.08005333014611" />
-      <entry key="D1" value="463.61565039717044" />
-      <entry key="W1" value="547.7645639803953" />
+      <entry key="MS100" value="1.0700254026828755E-12" />
+      <entry key="MS500" value="0.005553232049570353" />
+      <entry key="S2" value="0.6890519969921516" />
+      <entry key="S5" value="2.1839111277594863" />
+      <entry key="S10" value="3.331736832013747" />
+      <entry key="S30" value="4.727490559510399" />
+      <entry key="S60" value="5.59280111828138" />
+      <entry key="M2" value="7.293852792805479" />
+      <entry key="M5" value="13.28272822727399" />
+      <entry key="M10" value="22.29148729407951" />
+      <entry key="M15" value="28.9485524556915" />
+      <entry key="M30" value="40.41212742478314" />
+      <entry key="H1" value="53.976274671117636" />
+      <entry key="H2" value="92.67410776655382" />
+      <entry key="H4" value="192.2688396867525" />
+      <entry key="D1" value="602.3045289473343" />
+      <entry key="W1" value="787.1426196687156" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000080944" />
-      <entry key="S30" value="1.0002007841953924" />
-      <entry key="S60" value="1.0141698340200536" />
-      <entry key="M2" value="1.11904779597195" />
-      <entry key="M5" value="1.45618509856383" />
-      <entry key="M10" value="2.1765432784987313" />
-      <entry key="M15" value="3.2650214840942637" />
-      <entry key="M30" value="7.140038152000843" />
-      <entry key="H1" value="15.229601086834757" />
-      <entry key="H2" value="30.42644835658131" />
-      <entry key="H4" value="52.88016374785047" />
-      <entry key="D1" value="102.76363856157134" />
-      <entry key="W1" value="118.12555023966205" />
+      <entry key="S2" value="1.0000000000113227" />
+      <entry key="S5" value="1.0000418387710388" />
+      <entry key="S10" value="1.0064684297748796" />
+      <entry key="S30" value="1.1945645224406352" />
+      <entry key="S60" value="1.588007984841251" />
+      <entry key="M2" value="2.6017666012553713" />
+      <entry key="M5" value="6.223339826509832" />
+      <entry key="M10" value="11.849242447290493" />
+      <entry key="M15" value="16.279350194512958" />
+      <entry key="M30" value="24.172326198652208" />
+      <entry key="H1" value="31.74123482662866" />
+      <entry key="H2" value="43.84213785794596" />
+      <entry key="H4" value="68.31192848948267" />
+      <entry key="D1" value="157.5114124054822" />
+      <entry key="W1" value="194.5783395868013" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.178743959020137E-7" />
-      <entry key="MS500" value="0.046520164223954365" />
-      <entry key="S2" value="0.4644193537479505" />
-      <entry key="S5" value="0.7358073537658929" />
-      <entry key="S10" value="0.8577921390279316" />
-      <entry key="S30" value="0.9503464568016985" />
-      <entry key="S60" value="0.9886297869933408" />
-      <entry key="M2" value="1.1053702728749615" />
-      <entry key="M5" value="1.7986207454523968" />
-      <entry key="M10" value="6.414932837705764" />
-      <entry key="M15" value="14.086407435146127" />
-      <entry key="M30" value="41.16962910751335" />
-      <entry key="H1" value="89.9632557053554" />
-      <entry key="H2" value="166.0614986514742" />
-      <entry key="H4" value="277.9499812715037" />
-      <entry key="D1" value="566.3760906241531" />
-      <entry key="W1" value="665.8895945714193" />
+      <entry key="MS100" value="1.868013945126094E-11" />
+      <entry key="MS500" value="0.008713983019608755" />
+      <entry key="S2" value="0.777062017284993" />
+      <entry key="S5" value="2.5144465336744273" />
+      <entry key="S10" value="3.9001608738734483" />
+      <entry key="S30" value="5.731470135279267" />
+      <entry key="S60" value="7.069196687614256" />
+      <entry key="M2" value="9.822254628165114" />
+      <entry key="M5" value="19.44647705652783" />
+      <entry key="M10" value="34.08439464079942" />
+      <entry key="M15" value="45.17606621287155" />
+      <entry key="M30" value="64.54573695091015" />
+      <entry key="H1" value="85.69227115342701" />
+      <entry key="H2" value="136.4993233375012" />
+      <entry key="H4" value="260.56787102806106" />
+      <entry key="D1" value="759.8110814364143" />
+      <entry key="W1" value="981.7201069273315" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -107,34 +111,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.connection.executor": "Run",
-    "Python.interpreter.executor": "Run",
-    "Python.teste_command.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/isaia/PycharmProjects/ATLAS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.command_routes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.interpreter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste_command.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaia/PycharmProjects/ATLAS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2026.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend\app" />
@@ -143,6 +148,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.teste_command">
+    <configuration name="command_routes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ATLAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/app/routes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/routes/command_routes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ATLAS" />
       <option name="ENV_FILES" value="" />
@@ -218,6 +247,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.teste_command" />
+        <item itemvalue="Python.command_routes" />
         <item itemvalue="Python.interpreter" />
       </list>
     </recent_temporary>
@@ -263,6 +293,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remider completo" />
