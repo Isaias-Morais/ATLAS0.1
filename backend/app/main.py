@@ -11,8 +11,6 @@ from backend.app.routes.command_routes import router as command_router
 
 app = FastAPI()
 
-
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],

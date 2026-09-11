@@ -1,7 +1,10 @@
 from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
 
+from backend.app.database.connection import get_db
 from backend.app.dispatcher.dispatcher import Dispatcher
-from backend.app.schemas.command import CommandSchema
+from backend.app.interpreter.interpreter import Interpreter
+from backend.app.schemas.command_scherma import CommandSchema, CommandRequest
 from backend.app.security.auth import get_current_user_id
 
 router = APIRouter(
@@ -9,8 +12,12 @@ router = APIRouter(
     tags=["Commands"]
 )
 
+interpreter = Interpreter()
 dispatcher = Dispatcher()
 
 @router.post("/")
-def execute_command(command:CommandSchema,user_id: int = Depends(get_current_user_id)):
-    return dispatcher.dispatcher(command)
+def execute_command( text:CommandRequest,db:Session=Depends(get_db),user_id: int = Depends(get_current_user_id)):
+
+    command:CommandSchema = interpreter.interpret(text.text)
+
+    return dispatcher.dispatch(command=command,db=db,user_id=user_id)
