@@ -21,3 +21,5 @@ def execute_command( text:CommandRequest,db:Session=Depends(get_db),user_id: int
     command:CommandSchema = interpreter.interpret(text.text)
 
     return dispatcher.dispatch(command=command,db=db,user_id=user_id)
+
+#aiai
