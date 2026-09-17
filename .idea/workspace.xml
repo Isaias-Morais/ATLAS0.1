@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="comecando front">
+      <change afterPath="$PROJECT_DIR$/frontend/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/img/circuloIA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/teste_atlas imterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ATLAS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATLAS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/teste_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/teste_command.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,61 +45,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000294855828515" />
-      <entry key="S5" value="1.029021003203062" />
-      <entry key="S10" value="1.2938433608246052" />
-      <entry key="S30" value="2.4312401745446204" />
-      <entry key="S60" value="3.592635362426041" />
-      <entry key="M2" value="6.290461089780602" />
-      <entry key="M5" value="16.9215443618208" />
-      <entry key="M10" value="33.8417973966533" />
-      <entry key="M15" value="48.48269796968893" />
-      <entry key="M30" value="86.02520749639888" />
-      <entry key="H1" value="150.22565556120568" />
-      <entry key="H2" value="245.2286680919599" />
-      <entry key="H4" value="361.27492016259043" />
-      <entry key="D1" value="595.3836186484622" />
-      <entry key="W1" value="665.845509824933" />
+      <entry key="MS100" value="1.00000417439919" />
+      <entry key="MS500" value="1.0841312163550545" />
+      <entry key="S2" value="1.6754011381466671" />
+      <entry key="S5" value="2.6123810055428107" />
+      <entry key="S10" value="3.6347587772134093" />
+      <entry key="S30" value="5.065411873349207" />
+      <entry key="S60" value="6.123281280406117" />
+      <entry key="M2" value="9.24445005053024" />
+      <entry key="M5" value="18.44171989921068" />
+      <entry key="M10" value="28.152805374551775" />
+      <entry key="M15" value="35.50154913082757" />
+      <entry key="M30" value="49.611248143051505" />
+      <entry key="H1" value="64.07971338445627" />
+      <entry key="H2" value="105.08668224946948" />
+      <entry key="H4" value="234.41216642796846" />
+      <entry key="D1" value="756.6425272726734" />
+      <entry key="W1" value="972.8512196604868" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.059369432215605E-100" />
-      <entry key="S5" value="1.7986496193894029E-40" />
-      <entry key="S10" value="1.7393819475526826E-20" />
-      <entry key="S30" value="4.4531392299048787E-7" />
-      <entry key="S60" value="0.0013051395516377566" />
-      <entry key="M2" value="0.08720958881889578" />
-      <entry key="M5" value="1.4114229649075931" />
-      <entry key="M10" value="4.5194796743726195" />
-      <entry key="M15" value="7.476467702736878" />
-      <entry key="M30" value="14.59714228763173" />
-      <entry key="H1" value="24.047219986346626" />
-      <entry key="H2" value="36.61323346891685" />
-      <entry key="H4" value="52.59177244714516" />
-      <entry key="D1" value="84.24326636066036" />
-      <entry key="W1" value="93.32683650453465" />
+      <entry key="MS100" value="6.086256879282596E-34" />
+      <entry key="MS500" value="2.2744168056191386E-7" />
+      <entry key="S2" value="0.02183823393517311" />
+      <entry key="S5" value="0.21661493379289537" />
+      <entry key="S10" value="0.46666156924728386" />
+      <entry key="S30" value="1.025599907710095" />
+      <entry key="S60" value="2.06076054580146" />
+      <entry key="M2" value="4.0512934054373515" />
+      <entry key="M5" value="7.417809715359532" />
+      <entry key="M10" value="10.456363187218033" />
+      <entry key="M15" value="12.928712933754037" />
+      <entry key="M30" value="17.915697377499864" />
+      <entry key="H1" value="22.614471050738796" />
+      <entry key="H2" value="29.69393794374078" />
+      <entry key="H4" value="47.30135200012081" />
+      <entry key="D1" value="116.24182952084773" />
+      <entry key="W1" value="144.4075184320354" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.7782348475155997E-4" />
-      <entry key="MS500" value="0.20675584211081638" />
-      <entry key="S2" value="0.6743452922830302" />
-      <entry key="S5" value="0.8822406560256274" />
-      <entry key="S10" value="1.2127271130905193" />
-      <entry key="S30" value="2.395661898217789" />
-      <entry key="S60" value="3.569159759267916" />
-      <entry key="M2" value="6.352784130097828" />
-      <entry key="M5" value="18.29749186940829" />
-      <entry key="M10" value="38.31758718386004" />
-      <entry key="M15" value="55.91277641828852" />
-      <entry key="M30" value="100.57827840198368" />
-      <entry key="H1" value="174.23765766328196" />
-      <entry key="H2" value="281.8168665555826" />
-      <entry key="H4" value="413.85035859135934" />
-      <entry key="D1" value="679.6231113984986" />
-      <entry key="W1" value="759.1717678375218" />
+      <entry key="MS100" value="7.844297047205863E-6" />
+      <entry key="MS500" value="0.10853057142151093" />
+      <entry key="S2" value="0.9718862482963541" />
+      <entry key="S5" value="2.2633657186167757" />
+      <entry key="S10" value="3.6742411910995165" />
+      <entry key="S30" value="5.874490741170071" />
+      <entry key="S60" value="8.04204385122408" />
+      <entry key="M2" value="13.191990282524685" />
+      <entry key="M5" value="25.788161151302525" />
+      <entry key="M10" value="38.55877039134435" />
+      <entry key="M15" value="48.389370871025044" />
+      <entry key="M30" value="67.49958784575317" />
+      <entry key="H1" value="86.67720875014213" />
+      <entry key="H2" value="134.76840987956803" />
+      <entry key="H4" value="281.70198816338274" />
+      <entry key="D1" value="872.8791948178128" />
+      <entry key="W1" value="1117.2578265694265" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -105,34 +111,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.connection.executor": "Run",
-    "Python.teste_command.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/isaia/PycharmProjects/ATLAS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.teste_atlas imterface.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste_command.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaia/PycharmProjects/ATLAS/frontend/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\isaia\PycharmProjects\ATLAS\frontend\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend\app" />
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS" />
@@ -140,6 +151,9 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.teste_command">
+    <configuration name="teste_atlas imterface.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ATLAS/frontend/teste_atlas imterface.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ATLAS" />
       <option name="ENV_FILES" value="" />
@@ -199,7 +213,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-eff1e8def5f5-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10315.174" />
+        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
       </set>
     </attachedChunks>
   </component>
@@ -213,6 +227,13 @@
       <workItem from="1787799014390" duration="5324000" />
       <workItem from="1789223551295" duration="483000" />
       <workItem from="1789246935836" duration="9781000" />
+      <workItem from="1789361207239" duration="80000" />
+      <workItem from="1789361401955" duration="3000" />
+      <workItem from="1789361417964" duration="3000" />
+      <workItem from="1789361498182" duration="4000" />
+      <workItem from="1789438520005" duration="2642000" />
+      <workItem from="1789441721778" duration="1181000" />
+      <workItem from="1789527298371" duration="3321000" />
     </task>
     <task id="LOCAL-00001" summary="remider completo">
       <option name="closed" value="true" />
