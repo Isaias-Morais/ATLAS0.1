@@ -20,4 +20,11 @@ def extrair_titulos_lembretes(texto: str):
 
 
 
-print(extrair_titulos_lembretes('isaias amanha 14:00'))
+
+interpreter = Interpreter()
+
+hora = interpreter.transformar_horario("14:99")
+
+print(hora)
+print(type(hora))
+print(isinstance(hora, time))
