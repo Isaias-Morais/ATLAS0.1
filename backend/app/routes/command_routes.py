@@ -22,4 +22,3 @@ def execute_command( text:CommandRequest,db:Session=Depends(get_db),user_id: int
 
     return dispatcher.dispatch(command=command,db=db,user_id=user_id)
 
-#1

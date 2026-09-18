@@ -66,7 +66,7 @@ class Interpreter:
 
     def procurar_horario(self,texto: str):
 
-        resultado = re.search(r"\d\d:\d\d", texto)
+        resultado = re.search(r"\d{1,2}:\d{1,2}", texto)
 
         if not resultado:
             return None
@@ -77,14 +77,26 @@ class Interpreter:
         if not texto:
             return None
 
-        partes = texto.split(':')
+        if not (':' in texto):
+            hora = int(texto)
+            minutos = 0
 
-        hora = int(partes[0])
-        minutos = int(partes[1])
+        else:
+            partes = texto.split(':')
+
+            hora = int(partes[0])
+            minutos = int(partes[1])
+
+        if hora < 0 or hora > 23:
+            return None
+        if minutos < 0 or minutos > 59:
+            return None
 
         hora_completa = time(hour=hora, minute=minutos)
 
         return hora_completa
+
+
 
     @staticmethod
     def texto_formatado(texto: str):
