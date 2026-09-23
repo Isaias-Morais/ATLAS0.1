@@ -17,11 +17,10 @@ class Interpreter:
         horario = self.transformar_horario(horario)
         data_e_hora = self.montar_data_hora(comando=dia, hora=horario)
 
+        if not data_e_hora:
+            return "O horário informado é inválido."
+
         return data_e_hora
-
-
-
-
 
 
     def interpret(self, text: str):
@@ -42,13 +41,24 @@ class Interpreter:
                 }
             )
 
+
+        if text.startswith("deletar lembrete"):
+            reminder_id = self.extrair_id_lebrete(text)
+
+            if reminder_id is None:
+                raise ValueError("O ID do lembrete é obrigatório.")
+
+            return CommandSchema(
+                type="lembrete",
+                action="deletar",
+                data={
+                    "reminder_id": reminder_id
+                }
+            )
+
+
         match text:
 
-            case "listar lembretes":
-                return CommandSchema(
-                    type="lembrete",
-                    action="listar"
-                )
 
             case "atualizar lembrete":
                 return CommandSchema(
@@ -56,21 +66,22 @@ class Interpreter:
                     action="atualizar"
                 )
 
-            case "deletar lembrete":
+            case "listar lembrete":
                 return CommandSchema(
                     type="lembrete",
-                    action="deletar"
+                    action="listar"
                 )
 
         return None
 
     def procurar_horario(self,texto: str):
 
-        resultado = re.search(r"\d{1,2}:\d{1,2}", texto)
+        resultado = re.search(r"\d{1,2}(:\d{1,2})?", texto)
 
         if not resultado:
             return None
         return resultado.group()
+
 
     def transformar_horario(self,texto: str):
 
@@ -83,6 +94,9 @@ class Interpreter:
 
         else:
             partes = texto.split(':')
+
+            if not partes[0].isdigit() or not partes[1].isdigit() :
+                return None
 
             hora = int(partes[0])
             minutos = int(partes[1])
@@ -120,7 +134,7 @@ class Interpreter:
 
         return None
 
-    def montar_data_hora(self,comando: int | None, hora: time):
+    def montar_data_hora(self,comando: int | None, hora: time|None):
 
         hoje = datetime.now()
 
@@ -128,6 +142,9 @@ class Interpreter:
             comando = 0
 
         data = hoje + timedelta(days=comando)
+
+        if not hora:
+            raise ValueError("O horário informado é inválido.")
 
         data = data.replace(hour=hora.hour, minute=hora.minute, second=0, microsecond=0)
 
@@ -147,5 +164,9 @@ class Interpreter:
 
         return texto[:resultado.start()]
 
-
+    def extrair_id_lebrete(self,texto: str):
+        resultado = re.search(r"\d+", texto)
+        if not resultado:
+            return None
+        return int(resultado.group())
 

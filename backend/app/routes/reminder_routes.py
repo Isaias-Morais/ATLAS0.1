@@ -7,7 +7,7 @@ from backend.app.security.auth import get_current_user_id
 from backend.app.database.connection import get_db
 from backend.app.schemas.reminder_schema import ReminderCreate, ReminderResponse,ReminderUpdate
 from backend.app.services.reminder_service import create_reminder_service, get_reminder_service, \
-    update_reminder_service, delete_reminder_service, get_reminder_ALL_service
+    update_reminder_service, delete_reminder_service, get_all_reminders_service
 
 router = APIRouter(
     prefix="/reminders",
@@ -82,7 +82,7 @@ def get_reminders(
     user_id: int = Depends(get_current_user_id),
     db: Session = Depends(get_db)
 ):
-    return get_reminder_ALL_service(
+    return get_all_reminders_service(
         db=db,
         user_id=user_id
     )

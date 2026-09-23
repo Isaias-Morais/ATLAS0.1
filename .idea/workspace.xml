@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="comecando front">
+      <change afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/routes/command_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/command_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/routes/reminder_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/reminder_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/services/reminder_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/reminder_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/teste_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/teste_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/teste_atlas imterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/teste_atlas imterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,66 +43,66 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Isaias-Morais/ATLAS0.1.git&quot;,
-    &quot;accountId&quot;: &quot;a81faa1e-843e-47d3-ba31-8e82a0e68248&quot;
+    &quot;accountId&quot;: &quot;2a8c3d40-8c69-47d1-bc5c-a9f9a77c655c&quot;
   }
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.946984699904849E-73" />
-      <entry key="S2" value="7.928284382369678E-19" />
-      <entry key="S5" value="6.031368657019032E-8" />
-      <entry key="S10" value="3.356768492690433E-4" />
-      <entry key="S30" value="0.2455863054007147" />
-      <entry key="S60" value="1.7131179527198455" />
-      <entry key="M2" value="5.623807476413586" />
-      <entry key="M5" value="19.446775583054105" />
-      <entry key="M10" value="39.24677158446784" />
-      <entry key="M15" value="55.665709763929485" />
-      <entry key="M30" value="92.2495409041698" />
-      <entry key="H1" value="132.6679935789742" />
-      <entry key="H2" value="188.71881683829844" />
-      <entry key="H4" value="320.6397911549131" />
-      <entry key="D1" value="863.3307061169502" />
-      <entry key="W1" value="1095.3294264601434" />
+      <entry key="MS500" value="7.010205005091121E-91" />
+      <entry key="S2" value="2.8935612489175644E-23" />
+      <entry key="S5" value="9.6510168053459E-10" />
+      <entry key="S10" value="3.10661694369621E-5" />
+      <entry key="S30" value="0.03201147378902681" />
+      <entry key="S60" value="0.21091168378738512" />
+      <entry key="M2" value="0.7467947358450859" />
+      <entry key="M5" value="3.363982271472736" />
+      <entry key="M10" value="9.38713259471464" />
+      <entry key="M15" value="16.50339314569165" />
+      <entry key="M30" value="45.380877299052365" />
+      <entry key="H1" value="118.03610080017941" />
+      <entry key="H2" value="240.07753698887007" />
+      <entry key="H4" value="424.3708115992163" />
+      <entry key="D1" value="1090.7797314511488" />
+      <entry key="W1" value="1390.517372853631" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000002211893" />
-      <entry key="S10" value="1.0000148724308913" />
-      <entry key="S30" value="1.024592227649334" />
-      <entry key="S60" value="1.1577482542250142" />
-      <entry key="M2" value="1.4766775085360033" />
-      <entry key="M5" value="3.082966704299082" />
-      <entry key="M10" value="5.858230997558454" />
-      <entry key="M15" value="8.328902577437923" />
-      <entry key="M30" value="14.802474157680576" />
-      <entry key="H1" value="23.188225881436814" />
-      <entry key="H2" value="33.485957473241" />
-      <entry key="H4" value="52.57763116021105" />
-      <entry key="D1" value="125.43183358076898" />
-      <entry key="W1" value="155.90626397402528" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000085911" />
+      <entry key="S30" value="1.0003247014334253" />
+      <entry key="S60" value="1.0255707045743319" />
+      <entry key="M2" value="1.2382348923434947" />
+      <entry key="M5" value="2.1771978328400072" />
+      <entry key="M10" value="3.592076306608558" />
+      <entry key="M15" value="4.8886391377869645" />
+      <entry key="M30" value="9.271226704207002" />
+      <entry key="H1" value="19.230668865646233" />
+      <entry key="H2" value="36.1455882325831" />
+      <entry key="H4" value="61.65599403161844" />
+      <entry key="D1" value="151.3126379225152" />
+      <entry key="W1" value="190.9201549014867" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.7461917833144265E-8" />
-      <entry key="MS500" value="0.03271282131170549" />
-      <entry key="S2" value="0.42528444685153455" />
-      <entry key="S5" value="0.7103490998007382" />
-      <entry key="S10" value="0.8431563647795474" />
-      <entry key="S30" value="1.209214920563518" />
-      <entry key="S60" value="2.823181357634878" />
-      <entry key="M2" value="7.058396715728453" />
-      <entry key="M5" value="22.495706032653693" />
-      <entry key="M10" value="45.075460687087975" />
-      <entry key="M15" value="63.966918878646396" />
-      <entry key="M30" value="107.02763348561783" />
-      <entry key="H1" value="155.83739390923932" />
-      <entry key="H2" value="222.1905478376396" />
-      <entry key="H4" value="373.2047822576119" />
-      <entry key="D1" value="988.7570404847335" />
-      <entry key="W1" value="1251.234716008122" />
+      <entry key="MS100" value="0.006479058951675326" />
+      <entry key="MS500" value="0.3650080026636304" />
+      <entry key="S2" value="0.7772766056526925" />
+      <entry key="S5" value="0.9041286660125067" />
+      <entry key="S10" value="0.9508868054199192" />
+      <entry key="S30" value="1.0152899222214509" />
+      <entry key="S60" value="1.2260556572281933" />
+      <entry key="M2" value="1.9744343551309729" />
+      <entry key="M5" value="5.524305008322613" />
+      <entry key="M10" value="12.958248021161607" />
+      <entry key="M15" value="21.37026566343351" />
+      <entry key="M30" value="54.63005641794387" />
+      <entry key="H1" value="137.24515485607844" />
+      <entry key="H2" value="276.2039341975046" />
+      <entry key="H4" value="486.0104375581473" />
+      <entry key="D1" value="1242.0855583917075" />
+      <entry key="W1" value="1581.4363078379702" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -112,6 +119,7 @@
     &quot;JavaScript Debug.teste_atlas imterface.html.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.interpreter.executor&quot;: &quot;Run&quot;,
     &quot;Python.teste_command.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -146,7 +154,7 @@
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.teste_command">
+  <component name="RunManager" selected="Python.interpreter">
     <configuration name="teste_atlas imterface.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ATLAS/frontend/teste_atlas imterface.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -167,6 +175,30 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/database/connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="interpreter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ATLAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/app/interpreter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,6 +234,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.interpreter" />
         <item itemvalue="Python.teste_command" />
       </list>
     </recent_temporary>
@@ -230,6 +263,19 @@
       <workItem from="1789438520005" duration="2642000" />
       <workItem from="1789441721778" duration="1181000" />
       <workItem from="1789527298371" duration="3321000" />
+      <workItem from="1789769470219" duration="66000" />
+      <workItem from="1789787442374" duration="2608000" />
+      <workItem from="1789841518745" duration="303000" />
+      <workItem from="1789956160446" duration="23000" />
+      <workItem from="1789963632870" duration="364000" />
+      <workItem from="1789964009161" duration="723000" />
+      <workItem from="1790025464867" duration="599000" />
+      <workItem from="1790026906259" duration="1437000" />
+      <workItem from="1790029517852" duration="343000" />
+      <workItem from="1790049001624" duration="39000" />
+      <workItem from="1790115131643" duration="71000" />
+      <workItem from="1790118269888" duration="2692000" />
+      <workItem from="1790183881253" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="remider completo">
       <option name="closed" value="true" />

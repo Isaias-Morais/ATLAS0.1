@@ -44,3 +44,5 @@ def update_reminder(db: Session,reminder: Reminder,title: str,description: str |
 def delete_reminder(db: Session, reminder: Reminder):
     db.delete(reminder)
     db.commit()
+
+    return reminder

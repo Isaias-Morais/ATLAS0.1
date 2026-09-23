@@ -14,7 +14,9 @@ from backend.app.schemas.command_scherma import ReminderCommandData, CommandSche
 def create_reminder_service(
     db: Session,
     user_id: int,
-    command:CommandSchema
+    title: str,
+    description: str | None,
+    remind_at: datetime
 ):
 
     user = get_user_by_id(db, user_id)
@@ -29,8 +31,9 @@ def create_reminder_service(
 
     reminder = Reminder(
         user_id=user_id,
-        title=command.data.title,
-        remind_at=command.data.remind_at
+        title=title,
+        remind_at=remind_at,
+        description=description
     )
  
     return create_reminder(db, reminder)
@@ -62,7 +65,7 @@ def get_reminder_service(
     return reminder
 
 
-def get_reminder_ALL_service(
+def get_all_reminders_service(
     db: Session,
     user_id: int
 ):
@@ -115,7 +118,7 @@ def delete_reminder_service(db: Session,reminder_id: int,user_id: int):
             detail="Lembrete não encontrado"
         )
 
-    delete_reminder(
+    return delete_reminder(
         db=db,
         reminder=reminder
     )
