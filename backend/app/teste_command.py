@@ -5,26 +5,33 @@ from backend.app.interpreter.interpreter import Interpreter
 import unicodedata
 
 
-def extrair_titulos_lembretes(texto: str):
-
-    texto = Interpreter.texto_formatado(texto)
-
-    texto = texto.removeprefix("criar lembrete ").strip()
-
-    resultado = re.search(r"hoje|amanha|depois de amanhã", texto)
-
-    if not resultado:
-        return None
-
-    return texto[:resultado.start()]
-
-
-
 
 interpreter = Interpreter()
+#
+# # hora = interpreter.transformar_horario(":0")
+# #
+# # print(hora)
+# # print(type(hora))
+# # print(isinstance(hora, time))
+#
+# # resultado = interpreter.parse_reminder_datetime(
+# #     "criar lembrete estudar Python amanhã às 12h"
+# # )
+# #
+# # print(resultado)
+# # print(type(resultado))
+# #
+# # horario = interpreter.procurar_horario("amanhã às 99")
+# #
+# # print(horario)
+#
+# # command = interpreter.interpret('criar lembrete estudar Python amanhã às 12h')
+# # print(command)
+# # print(type(command))
+# # print(command.type)
+# # print(command.action)
+# # print(command.data)
+#
+#
 
-hora = interpreter.transformar_horario("14:99")
-
-print(hora)
-print(type(hora))
-print(isinstance(hora, time))
+print(interpreter.extrair_id_lebrete("deletar lembrete 3"))

@@ -6,4 +6,3 @@ pydantic
 python-dotenv
 email-validator
 pwdlib[argon2]
-psycopg2
