@@ -95,6 +95,10 @@ def update_reminder_service(db: Session,reminder_id: int,user_id: int,title: str
             detail="Lembrete não encontrado"
         )
 
+    if not completed:
+        completed = reminder.completed
+
+
     return update_reminder(
         db=db,
         reminder=reminder,

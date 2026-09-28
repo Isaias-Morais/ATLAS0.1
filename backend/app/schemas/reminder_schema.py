@@ -12,9 +12,10 @@ class ReminderResponse(BaseModel):
     id: int
     user_id: int
     title: str
-    description: str | None
+    description: str | None = None
     remind_at: datetime
-    completed: bool
+    remind_at: datetime
+    completed: bool | None = None
     created_at: datetime
 
 

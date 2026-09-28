@@ -1,3 +1,5 @@
+from ctypes.wintypes import tagRECT
+
 from sqlalchemy.ext.asyncio import result
 
 from backend.app.schemas.command_scherma import CommandSchema
@@ -8,19 +10,6 @@ import unicodedata
 
 
 class Interpreter:
-
-
-    def parse_reminder_datetime(self,text: str):
-
-        dia = self.identificar_dia(text)
-        horario = self.procurar_horario(text)
-        horario = self.transformar_horario(horario)
-        data_e_hora = self.montar_data_hora(comando=dia, hora=horario)
-
-        if not data_e_hora:
-            return "O horário informado é inválido."
-
-        return data_e_hora
 
 
     def interpret(self, text: str):
@@ -56,15 +45,36 @@ class Interpreter:
                 }
             )
 
+        if text.startswith("atualizar lembrete"):
+
+            reminder_id = self.extrair_id_lebrete(text)
+
+            if not reminder_id:
+                return None
+
+            title = self.extrair_titulo_atualizacao(texto=text,remider_id=reminder_id)
+
+            text = self.limpar_texto_atualicao(texto=text,remider_id=reminder_id)
+
+            hora = self.parse_reminder_datetime(text)
+
+            if reminder_id is None:
+                raise ValueError("O ID do lembrete é obrigatório.")
+
+            return CommandSchema(
+                type="lembrete",
+                action="atualizar",
+                data={
+                    "reminder_id": reminder_id,
+                    'title': title,
+                    "description":None,
+                    "remind_at": hora,
+                    'completed': None
+                }
+            )
+
 
         match text:
-
-
-            case "atualizar lembrete":
-                return CommandSchema(
-                    type="lembrete",
-                    action="atualizar"
-                )
 
             case "listar lembrete":
                 return CommandSchema(
@@ -74,7 +84,22 @@ class Interpreter:
 
         return None
 
-    def procurar_horario(self,texto: str):
+
+    def parse_reminder_datetime(self,text: str):
+
+        dia = self.identificar_dia(text)
+        horario = self.procurar_horario(text)
+        horario = self.transformar_horario(horario)
+        data_e_hora = self.montar_data_hora(comando=dia, hora=horario)
+
+        if not data_e_hora:
+            return "O horário informado é inválido."
+
+        return data_e_hora
+
+
+
+    def procurar_horario(self, texto: str):
 
         resultado = re.search(r"\d{1,2}(:\d{1,2})?", texto)
 
@@ -82,8 +107,7 @@ class Interpreter:
             return None
         return resultado.group()
 
-
-    def transformar_horario(self,texto: str):
+    def transformar_horario(self, texto: str):
 
         if not texto:
             return None
@@ -155,7 +179,7 @@ class Interpreter:
 
         texto = Interpreter.texto_formatado(texto)
 
-        texto = texto.removeprefix("criar lembrete ").strip()
+        texto = texto.removeprefix("criar lembrete").strip()
 
         resultado = re.search(r"hoje|amanha|depois de amanhã", texto)
 
@@ -164,9 +188,37 @@ class Interpreter:
 
         return texto[:resultado.start()]
 
+
+
+    def extrair_titulo_atualizacao(self,texto: str, remider_id:int):
+
+        texto = self.limpar_texto_atualicao(texto, remider_id)
+
+        resultado = re.search(r"hoje|amanha|depois de amanhã", texto)
+
+        if not resultado:
+            return None
+
+        return texto[:resultado.start()]
+
+
     def extrair_id_lebrete(self,texto: str):
         resultado = re.search(r"\d+", texto)
         if not resultado:
             return None
         return int(resultado.group())
+
+
+    def limpar_texto_atualicao(self,texto: str, remider_id:int):
+
+        texto = Interpreter.texto_formatado(texto)
+
+        texto = texto.removeprefix("atualizar lembrete").strip()
+
+        prefixo = f"{remider_id} para"
+
+        texto = texto.removeprefix(prefixo).strip()
+
+        return texto
+
 

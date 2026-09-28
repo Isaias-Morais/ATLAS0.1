@@ -8,6 +8,7 @@ class ReminderCommandData(BaseModel):
     description: str | None = None
     remind_at: datetime | None = None
     reminder_id: int|None = None
+    completed: bool | None = None
 
 
 

@@ -34,4 +34,11 @@ interpreter = Interpreter()
 #
 #
 
-print(interpreter.extrair_id_lebrete("deletar lembrete 3"))
+# print(interpreter.extrair_id_lebrete("deletar lembrete 3"))
+
+command = interpreter.interpret(
+    "atualizar lembrete 3 para estudar Java amanhã às 15"
+)
+
+print(command)
+print(command.data)

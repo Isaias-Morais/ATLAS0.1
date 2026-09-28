@@ -1,9 +1,9 @@
 from sqlalchemy.orm import session
 
-from backend.app.models import user
+from backend.app.models import user, reminder
 from backend.app.schemas.command_scherma import CommandSchema
 from backend.app.services.reminder_service import create_reminder_service, get_all_reminders_service, \
-    delete_reminder_service
+    delete_reminder_service,update_reminder_service
 
 
 class Dispatcher:
@@ -34,7 +34,15 @@ class Dispatcher:
                     )
 
                 case "atualizar":
-                    print("Atualizar lembrete")
+                    return update_reminder_service(
+                        db=db,
+                        reminder_id=command.data.reminder_id,
+                        user_id=user_id,
+                        title=command.data.title,
+                        remind_at=command.data.remind_at,
+                        completed=command.data.completed,
+                        description=command.data.description
+                    )
 
                 case "deletar":
                     return delete_reminder_service(

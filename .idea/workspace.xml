@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="comecando front">
-      <change afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
+    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="feat: implementa comandos de criar, listar e deletar lembretes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/routes/command_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/command_routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/routes/reminder_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/reminder_routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/services/reminder_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/reminder_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/schemas/reminder_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/reminder_schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/teste_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/teste_command.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/teste_atlas imterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/teste_atlas imterface.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,60 +44,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="7.010205005091121E-91" />
-      <entry key="S2" value="2.8935612489175644E-23" />
-      <entry key="S5" value="9.6510168053459E-10" />
-      <entry key="S10" value="3.10661694369621E-5" />
-      <entry key="S30" value="0.03201147378902681" />
-      <entry key="S60" value="0.21091168378738512" />
-      <entry key="M2" value="0.7467947358450859" />
-      <entry key="M5" value="3.363982271472736" />
-      <entry key="M10" value="9.38713259471464" />
-      <entry key="M15" value="16.50339314569165" />
-      <entry key="M30" value="45.380877299052365" />
-      <entry key="H1" value="118.03610080017941" />
-      <entry key="H2" value="240.07753698887007" />
-      <entry key="H4" value="424.3708115992163" />
-      <entry key="D1" value="1090.7797314511488" />
-      <entry key="W1" value="1390.517372853631" />
+      <entry key="MS500" value="5.243717727686782E-93" />
+      <entry key="S2" value="3.19010939406675E-23" />
+      <entry key="S5" value="3.740593391066702E-9" />
+      <entry key="S10" value="2.6802745507449946E-4" />
+      <entry key="S30" value="0.6696586180015798" />
+      <entry key="S60" value="5.268404502536563" />
+      <entry key="M2" value="15.973309090484278" />
+      <entry key="M5" value="35.564199952899855" />
+      <entry key="M10" value="52.148592668838425" />
+      <entry key="M15" value="63.6880017208435" />
+      <entry key="M30" value="92.05943967841611" />
+      <entry key="H1" value="149.55064181331556" />
+      <entry key="H2" value="266.9533188360855" />
+      <entry key="H4" value="464.48330147876186" />
+      <entry key="D1" value="1207.5632936368784" />
+      <entry key="W1" value="1557.2585947506" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000085911" />
-      <entry key="S30" value="1.0003247014334253" />
-      <entry key="S60" value="1.0255707045743319" />
-      <entry key="M2" value="1.2382348923434947" />
-      <entry key="M5" value="2.1771978328400072" />
-      <entry key="M10" value="3.592076306608558" />
-      <entry key="M15" value="4.8886391377869645" />
-      <entry key="M30" value="9.271226704207002" />
-      <entry key="H1" value="19.230668865646233" />
-      <entry key="H2" value="36.1455882325831" />
-      <entry key="H4" value="61.65599403161844" />
-      <entry key="D1" value="151.3126379225152" />
-      <entry key="W1" value="190.9201549014867" />
+      <entry key="S5" value="1.0000000000010072" />
+      <entry key="S10" value="1.000001999245103" />
+      <entry key="S30" value="1.0353776126297451" />
+      <entry key="S60" value="1.5103819116717183" />
+      <entry key="M2" value="3.6138116749953593" />
+      <entry key="M5" value="10.741701948664014" />
+      <entry key="M10" value="19.07909807113374" />
+      <entry key="M15" value="24.884673651961414" />
+      <entry key="M30" value="36.17420502607091" />
+      <entry key="H1" value="50.29195081490103" />
+      <entry key="H2" value="70.790901172594" />
+      <entry key="H4" value="100.67362424954985" />
+      <entry key="D1" value="203.46526364114766" />
+      <entry key="W1" value="250.32257376743232" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.006479058951675326" />
-      <entry key="MS500" value="0.3650080026636304" />
-      <entry key="S2" value="0.7772766056526925" />
-      <entry key="S5" value="0.9041286660125067" />
-      <entry key="S10" value="0.9508868054199192" />
-      <entry key="S30" value="1.0152899222214509" />
-      <entry key="S60" value="1.2260556572281933" />
-      <entry key="M2" value="1.9744343551309729" />
-      <entry key="M5" value="5.524305008322613" />
-      <entry key="M10" value="12.958248021161607" />
-      <entry key="M15" value="21.37026566343351" />
-      <entry key="M30" value="54.63005641794387" />
-      <entry key="H1" value="137.24515485607844" />
-      <entry key="H2" value="276.2039341975046" />
-      <entry key="H4" value="486.0104375581473" />
-      <entry key="D1" value="1242.0855583917075" />
-      <entry key="W1" value="1581.4363078379702" />
+      <entry key="MS100" value="0.012090351512049924" />
+      <entry key="MS500" value="0.4135116842216328" />
+      <entry key="S2" value="0.8019031997163384" />
+      <entry key="S5" value="0.9154798300620445" />
+      <entry key="S10" value="0.9570767554628223" />
+      <entry key="S30" value="1.6879998567438586" />
+      <entry key="S60" value="6.750775153281074" />
+      <entry key="M2" value="19.523591337356454" />
+      <entry key="M5" value="46.21321642086065" />
+      <entry key="M10" value="71.14518492496208" />
+      <entry key="M15" value="88.5015318869053" />
+      <entry key="M30" value="128.18197118125266" />
+      <entry key="H1" value="199.80521310860007" />
+      <entry key="H2" value="337.71615389715015" />
+      <entry key="H4" value="565.1353754836298" />
+      <entry key="D1" value="1411.0203739980298" />
+      <entry key="W1" value="1807.5797077158556" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -154,7 +149,7 @@
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.interpreter">
+  <component name="RunManager" selected="Python.teste_command">
     <configuration name="teste_atlas imterface.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ATLAS/frontend/teste_atlas imterface.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -234,7 +229,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.interpreter" />
         <item itemvalue="Python.teste_command" />
       </list>
     </recent_temporary>
@@ -276,6 +270,8 @@
       <workItem from="1790115131643" duration="71000" />
       <workItem from="1790118269888" duration="2692000" />
       <workItem from="1790183881253" duration="172000" />
+      <workItem from="1790393565840" duration="17000" />
+      <workItem from="1790529928252" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="remider completo">
       <option name="closed" value="true" />
@@ -301,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789247235871</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: implementa comandos de criar, listar e deletar lembretes">
+      <option name="closed" value="true" />
+      <created>1790200404000</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790200404000</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +325,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remider completo" />
     <MESSAGE value="comecando front" />
-    <option name="LAST_COMMIT_MESSAGE" value="comecando front" />
+    <MESSAGE value="feat: implementa comandos de criar, listar e deletar lembretes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa comandos de criar, listar e deletar lembretes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ATLAS0_1$teste_command.coverage" NAME="teste_command Coverage Results" MODIFIED="1789256684325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/app" />
