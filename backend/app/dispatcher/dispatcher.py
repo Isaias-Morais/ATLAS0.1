@@ -50,3 +50,10 @@ class Dispatcher:
                         reminder_id=command.data.reminder_id,
                         user_id=user_id
                     )
+
+        if command.type == "musica":
+
+            match command.action:
+
+                case "tocar":
+                    pass

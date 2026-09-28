@@ -11,11 +11,18 @@ class ReminderCommandData(BaseModel):
     completed: bool | None = None
 
 
+class MusicCommandData(BaseModel):
+    musica: str | None = None
+    artist: str | None = None
+    title: str | None = None
+
+
 
 class CommandSchema(BaseModel):
     type: str
     action: str
-    data: ReminderCommandData | None = None
+    data: ReminderCommandData | MusicCommandData | None = None
+
 
 
 class CommandRequest(BaseModel):

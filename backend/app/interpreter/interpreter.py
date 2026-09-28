@@ -73,16 +73,25 @@ class Interpreter:
                 }
             )
 
+        if text.startswith("listar lembrete"):
 
-        match text:
+            return CommandSchema(
+                type="lembrete",
+                action="listar"
+            )
 
-            case "listar lembrete":
-                return CommandSchema(
-                    type="lembrete",
-                    action="listar"
-                )
+        if text.startswith("tocar"):
+
+            CommandSchema(
+                type="musica",
+                action="tocar",
+                data={
+                    "text": "evidências"
+                }
+            )
 
         return None
+
 
 
     def parse_reminder_datetime(self,text: str):
@@ -218,6 +227,14 @@ class Interpreter:
         prefixo = f"{remider_id} para"
 
         texto = texto.removeprefix(prefixo).strip()
+
+        return texto
+
+
+    def extrair_musica(self,texto: str):
+        texto = Interpreter.texto_formatado(texto)
+
+        texto = texto.removeprefix("tocar").strip()
 
         return texto
 
