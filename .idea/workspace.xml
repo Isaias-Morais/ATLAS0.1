@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="feat: implementa comandos de criar, listar e deletar lembretes">
-      <change afterPath="$PROJECT_DIR$/backend/app/services/music_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/providers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/providers/youtube_provider.py" afterDir="false" />
+    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="feat: implementa youtube provide">
+      <change afterPath="$PROJECT_DIR$/backend/teste_provide_youtube.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/teste_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/teste_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/services/music_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/music_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/providers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/providers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/providers/youtube_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/providers/youtube_provider.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,61 +46,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000000053" />
-      <entry key="MS500" value="1.0013984069738293" />
-      <entry key="S2" value="1.193381375139717" />
-      <entry key="S5" value="1.5278508007892064" />
-      <entry key="S10" value="1.908428303362612" />
-      <entry key="S30" value="3.664841481541598" />
-      <entry key="S60" value="5.205302576909465" />
-      <entry key="M2" value="6.956975736717579" />
-      <entry key="M5" value="11.33021581128855" />
-      <entry key="M10" value="17.87486687616612" />
-      <entry key="M15" value="25.375811927078402" />
-      <entry key="M30" value="53.008367919833006" />
-      <entry key="H1" value="113.17203741007937" />
-      <entry key="H2" value="233.44918273293584" />
-      <entry key="H4" value="440.31701871123363" />
-      <entry key="D1" value="1235.0813380580457" />
-      <entry key="W1" value="1619.3649193367182" />
+      <entry key="MS100" value="1.000000000000003" />
+      <entry key="MS500" value="1.001258638484193" />
+      <entry key="S2" value="1.24873283582298" />
+      <entry key="S5" value="2.0787578434016565" />
+      <entry key="S10" value="3.4429237689795706" />
+      <entry key="S30" value="6.304666441669367" />
+      <entry key="S60" value="8.58214478605814" />
+      <entry key="M2" value="13.509003558063638" />
+      <entry key="M5" value="28.638233725354638" />
+      <entry key="M10" value="49.340997750289176" />
+      <entry key="M15" value="65.62219690018696" />
+      <entry key="M30" value="96.19616654432915" />
+      <entry key="H1" value="131.43145126862092" />
+      <entry key="H2" value="209.21315711086137" />
+      <entry key="H4" value="393.1294053967322" />
+      <entry key="D1" value="1297.500514218337" />
+      <entry key="W1" value="1792.642756781412" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.560848155432639E-136" />
-      <entry key="MS500" value="8.330266366249843E-28" />
-      <entry key="S2" value="2.3617207912452583E-7" />
-      <entry key="S5" value="0.0036368905097841674" />
-      <entry key="S10" value="0.10678978577231261" />
-      <entry key="S30" value="1.1553460287979644" />
-      <entry key="S60" value="2.1400301815567935" />
-      <entry key="M2" value="2.9226366448520107" />
-      <entry key="M5" value="3.579201826509137" />
-      <entry key="M10" value="4.370282385818359" />
-      <entry key="M15" value="5.8537936728331905" />
-      <entry key="M30" value="13.590303695272508" />
-      <entry key="H1" value="30.493984142764873" />
-      <entry key="H2" value="56.72388470641719" />
-      <entry key="H4" value="92.68091590576473" />
-      <entry key="D1" value="208.32447222595448" />
-      <entry key="W1" value="261.05485363111836" />
+      <entry key="MS100" value="6.557460165719592E-12" />
+      <entry key="MS500" value="0.005798920280862878" />
+      <entry key="S2" value="0.28030028273273067" />
+      <entry key="S5" value="0.8020070063667992" />
+      <entry key="S10" value="1.5468996752107897" />
+      <entry key="S30" value="2.850364361048385" />
+      <entry key="S60" value="3.749321227729852" />
+      <entry key="M2" value="5.566469186756061" />
+      <entry key="M5" value="11.01952906685378" />
+      <entry key="M10" value="18.606145401818647" />
+      <entry key="M15" value="24.627199463108774" />
+      <entry key="M30" value="36.01157420886593" />
+      <entry key="H1" value="47.63423280551991" />
+      <entry key="H2" value="66.76630689555715" />
+      <entry key="H4" value="103.03308066242268" />
+      <entry key="D1" value="245.451410075373" />
+      <entry key="W1" value="316.7923585328054" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04010705929884568" />
-      <entry key="MS500" value="0.526961790702947" />
-      <entry key="S2" value="1.0440321112349464" />
-      <entry key="S5" value="1.4667815355763414" />
-      <entry key="S10" value="1.9609317385806582" />
-      <entry key="S30" value="4.724491113562664" />
-      <entry key="S60" value="7.259320893656783" />
-      <entry key="M2" value="9.818166251197878" />
-      <entry key="M5" value="14.872371440934856" />
-      <entry key="M10" value="22.219595001654756" />
-      <entry key="M15" value="31.207206132699294" />
-      <entry key="M30" value="66.57573986065705" />
-      <entry key="H1" value="143.6416120673757" />
-      <entry key="H2" value="290.14989602507654" />
-      <entry key="H4" value="532.9779201393862" />
-      <entry key="D1" value="1443.3974570001078" />
-      <entry key="W1" value="1880.4182543700247" />
+      <entry key="MS100" value="0.04481110150057847" />
+      <entry key="MS500" value="0.5403731428140651" />
+      <entry key="S2" value="1.2766206678981458" />
+      <entry key="S5" value="2.6401550098530824" />
+      <entry key="S10" value="4.76514658282822" />
+      <entry key="S30" value="9.014670617297266" />
+      <entry key="S60" value="12.229648728307692" />
+      <entry key="M2" value="18.983461608204397" />
+      <entry key="M5" value="39.56554671960383" />
+      <entry key="M10" value="67.8628311801259" />
+      <entry key="M15" value="90.17365958724461" />
+      <entry key="M30" value="132.15202199399766" />
+      <entry key="H1" value="179.02889404556862" />
+      <entry key="H2" value="275.9534427942855" />
+      <entry key="H4" value="496.14157635610286" />
+      <entry key="D1" value="1542.94256473666" />
+      <entry key="W1" value="2109.4333474880978" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -113,36 +112,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.teste_atlas imterface.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.interpreter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.teste_command.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaia/PycharmProjects/ATLAS/frontend/img&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.teste_atlas imterface.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.connection.executor": "Run",
+    "Python.interpreter.executor": "Run",
+    "Python.teste_command.executor": "Run",
+    "Python.teste_provide_youtube.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/isaia/PycharmProjects/ATLAS/frontend/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\frontend\img" />
@@ -153,7 +153,7 @@
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.teste_command">
+  <component name="RunManager" selected="Python.teste_provide_youtube">
     <configuration name="teste_atlas imterface.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ATLAS/frontend/teste_atlas imterface.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -231,8 +231,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="teste_provide_youtube" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ATLAS" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/teste_provide_youtube.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.teste_provide_youtube" />
         <item itemvalue="Python.teste_command" />
       </list>
     </recent_temporary>
@@ -309,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790200404000</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: implementa youtube provide">
+      <option name="closed" value="true" />
+      <created>1790635129510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1790635129510</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +363,8 @@
     <MESSAGE value="remider completo" />
     <MESSAGE value="comecando front" />
     <MESSAGE value="feat: implementa comandos de criar, listar e deletar lembretes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa comandos de criar, listar e deletar lembretes" />
+    <MESSAGE value="feat: implementa youtube provide" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa youtube provide" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ATLAS0_1$teste_command.coverage" NAME="teste_command Coverage Results" MODIFIED="1789256684325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/app" />

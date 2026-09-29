@@ -80,13 +80,18 @@ class Interpreter:
                 action="listar"
             )
 
+
         if text.startswith("tocar"):
 
-            CommandSchema(
+            musica = self.extrair_musica(text)
+            cantor = self.extrair_cantor_musica(text)
+
+            return CommandSchema(
                 type="musica",
                 action="tocar",
                 data={
-                    "text": "evidências"
+                    "musica": musica,
+                    "artist":cantor
                 }
             )
 
@@ -232,10 +237,22 @@ class Interpreter:
 
 
     def extrair_musica(self,texto: str):
+
         texto = Interpreter.texto_formatado(texto)
 
         texto = texto.removeprefix("tocar").strip()
 
         return texto
 
+    def extrair_cantor_musica(self,texto: str):
+
+        texto = Interpreter.texto_formatado(texto)
+        texto = texto.removeprefix("tocar").strip()
+
+        partes = texto.split(" de ", 1)
+
+        if len(partes) < 2:
+            return None
+
+        return partes[1].strip()
 

@@ -2,6 +2,7 @@ from sqlalchemy.orm import session
 
 from backend.app.models import user, reminder
 from backend.app.schemas.command_scherma import CommandSchema
+from backend.app.services.music_service import tocar_musica_service
 from backend.app.services.reminder_service import create_reminder_service, get_all_reminders_service, \
     delete_reminder_service,update_reminder_service
 
@@ -56,4 +57,8 @@ class Dispatcher:
             match command.action:
 
                 case "tocar":
-                    pass
+                    return tocar_musica_service(
+                        musica=command.data.musica,
+                        cantor=command.data.artist
+
+                    )
