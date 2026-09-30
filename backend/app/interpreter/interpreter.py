@@ -1,7 +1,6 @@
 from ctypes.wintypes import tagRECT
-
 from sqlalchemy.ext.asyncio import result
-
+import string
 from backend.app.schemas.command_scherma import CommandSchema
 from datetime import datetime, timedelta, time
 from datetime import timedelta
@@ -13,8 +12,9 @@ class Interpreter:
 
 
     def interpret(self, text: str):
-
-        text = self.texto_formatado(text)
+        text = self.comando_de_ativacao(text)
+        if not text:
+            return None
 
         if text.startswith("criar lembrete "):
             remind_at = self.parse_reminder_datetime(text)
@@ -154,7 +154,14 @@ class Interpreter:
     def texto_formatado(texto: str):
         texto_sem_acento = unicodedata.normalize('NFKD', texto).encode('ascii', 'ignore').decode('utf-8')
         texto_limpo = texto_sem_acento.lower()
-        return texto_limpo
+
+        resultado = ""
+
+        for caracter in texto_limpo:
+            if not caracter in string.punctuation:
+                resultado += caracter
+
+        return resultado
 
 
     def identificar_dia(self,texto: str):
@@ -255,4 +262,21 @@ class Interpreter:
             return None
 
         return partes[1].strip()
+
+
+    def comando_de_ativacao(self,texto: str):
+        texto = self.texto_formatado(texto)
+
+        if texto.startswith("atlas"):
+            texto = texto.removeprefix("atlas").strip()
+
+            if not texto:
+                return None
+
+            return texto
+
+        return None
+
+
+
 

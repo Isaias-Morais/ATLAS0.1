@@ -1,62 +1,106 @@
 <!doctype html>
-<html lang=pt-br>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Atlas</title>
+
+    <link
+            rel="stylesheet"
+            href="./css/style.css"
+    >
 </head>
+
 <body>
-    <header>
-        <div>
-            <h1>ATLAS</h1>
-        </div>
-        <div>
-            <time>time</time>
-            <p>texto da data</p>
-        </div>
-        <div>
-            <p><spam>informacao wifi<span/></p>
-            <p> bateria</p>
-            <p>informacao sinal</p>
-        </div>
-    </header>
 
-    <main>
-        <section>
-            <h2>ATLAS</h2>
-            <img src="img/circuloIA.png" width="200" height="200" alt="ciculo de ia de fala">
-            <p>Como posso ajudar?</p>
-        </section>
+<header class="header">
+    <div class="header__brand">
+        <h1>ATLAS</h1>
+    </div>
 
-        <section>
-            <button>Pronto para ouvir</button>
-        </section>
+    <div class="header__datetime">
+        <time id="current-time">00:00</time>
+        <p id="current-date">Data</p>
+    </div>
 
-        <section>
-            <article>
-                <h3>LEMBRETES</h3>
-                <p>text do lembretes</p>
-                <time>time</time>
+    </div>
+</header>
+
+
+<main class="main">
+
+    <section class="assistant">
+
+        <img
+                src="./img/circuloIA.png"
+                width="200"
+                height="200"
+                alt="Interface visual do Atlas"
+        >
+
+        <p id="assistant-message">
+            Como posso ajudar?
+        </p>
+    </section>
+
+
+    <section class="voice-control">
+        <button id="listen-button" type="button">
+            Pronto para ouvir
+        </button>
+    </section>
+
+
+    <section class="dashboard">
+
+        <article class="card card--reminders">
+            <h3>Lembretes</h3>
+
+            <p id="reminder-text">
+                Nenhum lembrete
+            </p>
+
+            <time id="reminder-time">
+                --
+            </time>
+        </article>
+
+
+        <article class="card card--music">
+            <h3>Música</h3>
+
+                <div id="music-player">
+                    Nenhuma música tocando
+                </div>
             </article>
-            <article>
-                <h3>MUSICA</h3>
-            </article>
 
-            <article>
-                <h3>ALARME</h3>
-                <p>proximo alarme</p>
-                <time>time</time>
-            </article>
-        </section>
-    </main>
+        </article>
 
-    <footer>
 
-    </footer>
+        <article class="card card--alarm">
+            <h3>Alarme</h3>
 
+            <p id="next-alarm">
+                Nenhum alarme
+            </p>
+
+            <time id="alarm-time">
+                --
+            </time>
+        </article>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+</footer>
 
 </body>
 </html>
