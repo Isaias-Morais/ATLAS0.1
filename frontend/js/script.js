@@ -1,4 +1,7 @@
 import "./voice.js";
 import "./api.js";
-import "./auth.js";
+import {iniciar} from "./auth.js";
 import "./music.js";
+import "./login.js";
+
+iniciar();

@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+css{@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');}
+
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,6 +16,10 @@ body {
     flex-direction: column;
 }
 
+/* =========================
+   HEADER
+========================= */
+
 .header {
     position: relative;
 }
@@ -23,6 +29,7 @@ body {
     top: 20px;
     left: 20px;
 }
+
 .header__datetime {
     position: absolute;
     top: 20px;
@@ -34,11 +41,48 @@ body {
     gap: 16px;
 }
 
+/* =========================
+   MAIN
+========================= */
+
 main {
+    width: 100%;
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+#login-form {
+    background-color: #0D1B2A;
+    border: 1px solid #1E3A52;
+    border-radius: 15px;
+
+    padding: 40px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main h3 {
+    color: #2196F3;
+}
+
+main p {
+    color: #808080;
+}
+
+main span {
+    color: green;
+}
+
+/* =========================
+   ATLAS
+========================= */
 
 .assistant {
     margin-top: 100px;
@@ -57,16 +101,6 @@ main {
     flex-wrap: wrap;
     gap: 20px;
 }
-main h3{
-    color: #2196F3;
-}
-main p{
-    color: #808080;
-}
-
-main span {
-    color: green;
-}
 
 .card {
     background-color: #0D1B2A;
@@ -81,9 +115,8 @@ main span {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-    box-sizing: border-box;
 }
+
 section.voice-control button {
     background-color: transparent;
     color: #2196F3;
@@ -103,6 +136,103 @@ section.voice-control button {
 }
 
 section.voice-control button:hover {
+    background-color: #2196F3;
+    color: #07131F;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 100%;
+
+    background-color: #0D1B2A;
+    border: 1px solid #1E3A52;
+    border-radius: 15px;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-card h1 {
+    color: #2196F3;
+    text-align: center;
+
+    font-size: 40px;
+}
+
+.login-card p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form label {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.login-form input {
+    background-color: #07131F;
+    color: #FFFFFF;
+
+    border: 1px solid #1E3A52;
+    border-radius: 8px;
+
+    padding: 12px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #2196F3;
+}
+
+.login-form button {
+    margin-top: 10px;
+
+    background-color: transparent;
+    color: #2196F3;
+
+    border: 2px solid #2196F3;
+    border-radius: 30px;
+
+    padding: 12px;
+
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-form button:hover {
     background-color: #2196F3;
     color: #07131F;
 }

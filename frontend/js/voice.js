@@ -18,7 +18,7 @@ function escutar() {
     reconhecimento.onresult = function (event) {
         console.log("RESULTADO");
 
-        indice = event.resultIndex;
+        const indice = event.resultIndex;
 
         if (event.results[indice].isFinal) {
 
@@ -67,5 +67,3 @@ function escutar() {
 
     reconhecimento.start();
     }
-
-escutar();
