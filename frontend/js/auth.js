@@ -13,18 +13,22 @@ export async function fazerLogin(email,password) {
         });
     const dados = await resposta.json();
 
-    return(dados.access_token);
+    console.log("Token no login:", accessToken);
+    console.log("Token salvo:", sessionStorage.getItem("accessToken"));
+    console.log("Origem:", window.location.origin);
+
+    accessToken = dados.access_token;
+    sessionStorage.setItem("accessToken", accessToken);
+
+    return accessToken;
 
     }
 
 
 
 export async function iniciar() {
-    const accessToken = await fazerLogin();
 
 }
-
-iniciar();
 
 
 

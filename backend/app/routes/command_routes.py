@@ -1,5 +1,3 @@
-from http.client import HTTPException
-
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, raiseload
 from fastapi import HTTPException
@@ -19,6 +17,12 @@ dispatcher = Dispatcher()
 
 @router.post("/")
 def execute_command( text:CommandRequest,db:Session=Depends(get_db),user_id: int = Depends(get_current_user_id)):
+
+    if text is None:
+        raise HTTPException(
+            status_code=400,
+            detail="Não foi possível entender o comando informado."
+        )
 
     try:
         command:CommandSchema = interpreter.interpret(text.text)

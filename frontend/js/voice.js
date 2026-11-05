@@ -1,69 +1,103 @@
+
+import { enviaComandos } from "./api.js";
+
 console.log("Atlas JS conectado");
 
-const reconhecimento = new webkitSpeechRecognition();
+const reconhecimento = new (
+    window.SpeechRecognition || window.webkitSpeechRecognition
+)();
 
 reconhecimento.lang = "pt-BR";
 reconhecimento.continuous = true;
-reconhecimento.interimResults = true;
+reconhecimento.interimResults = false;
 
 let atlas_ativo = false;
+let processando = false;
 
-function escutar() {
+function falar(texto) {
+    const fala = new SpeechSynthesisUtterance(texto);
+    fala.lang = "pt-BR";
 
-
-    reconhecimento.onstart = function () {
-        console.log("COMEÇOU A ESCUTAR");
-    };
-
-    reconhecimento.onresult = function (event) {
-        console.log("RESULTADO");
-
-        const indice = event.resultIndex;
-
-        if (event.results[indice].isFinal) {
-
-            const texto_comando = event.results[indice][0].transcript;
-            let texto = texto_comando.toLowerCase().trim();
-
-            if (texto  === 'atlas') {
-                reconhecimento.stop()
-
-                atlas_ativo = true;
-
-                const fala = new SpeechSynthesisUtterance("Pode falar");
-
-                fala.onend = function () {
-                    escutar();
-                };
-
-                speechSynthesis.speak(fala);
-
-            }
-            else if (texto.startsWith('atlas')) {
-
-                const comando = texto
-                console.log(comando);
-
-            }
-
-            else{
-                if (atlas_ativo) {
-                    const comando = texto
-                    console.log(comando);
-                    atlas_ativo = false;
-                }
-            }
+    fala.onend = () => {
+        if (!processando) {
+            iniciarEscuta();
         }
     };
 
+    speechSynthesis.speak(fala);
+}
 
-    reconhecimento.onerror = function (event) {
-        console.log("ERRO:", event.error);
-    };
-
-    reconhecimento.onend = function () {
-        console.log("TERMINOU");
-    };
-
-    reconhecimento.start();
+function iniciarEscuta() {
+    try {
+        reconhecimento.start();
+    } catch (erro) {
+        console.log("A escuta já está iniciada.");
     }
+}
+
+reconhecimento.onstart = () => {
+    console.log("Atlas está escutando...");
+};
+
+reconhecimento.onresult = async (event) => {
+    const indice = event.results.length - 1;
+    const texto = event.results[indice][0]
+        .transcript.toLowerCase()
+        .trim();
+
+    if (!event.results[indice].isFinal) return;
+
+    console.log("Você disse:", texto);
+
+    if (!atlas_ativo) {
+        if (texto === "atlas" || texto.startsWith("atlas ")) {
+            atlas_ativo = true;
+
+            const comando = texto
+                .replace(/^atlas[\s,]*/, "")
+                .trim();
+
+            reconhecimento.stop();
+
+            if (comando) {
+                await executarComando(comando);
+            } else {
+                falar("Pode falar");
+            }
+        }
+
+        return;
+    }
+
+    reconhecimento.stop();
+    await executarComando(texto);
+};
+
+async function executarComando(texto) {
+    processando = true;
+
+    try {
+        console.log("Enviando comando:", texto);
+        await enviaComandos(texto);
+    } catch (erro) {
+        console.error("Erro ao executar comando:", erro);
+        falar("Não consegui executar esse comando.");
+        return;
+    } finally {
+        atlas_ativo = false;
+        processando = false;
+    }
+
+
+    iniciarEscuta();
+}
+
+reconhecimento.onerror = (event) => {
+    console.error("Erro no reconhecimento:", event.error);
+};
+
+reconhecimento.onend = () => {
+    console.log("Reconhecimento encerrado.");
+};
+
+iniciarEscuta();

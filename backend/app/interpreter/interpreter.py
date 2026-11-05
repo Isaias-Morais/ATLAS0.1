@@ -12,12 +12,15 @@ class Interpreter:
 
 
     def interpret(self, text: str):
+        print(text)
         text = self.comando_de_ativacao(text)
+        print("TEXTO INTERPRETADO:", repr(text))
         if not text:
             return None
 
         if text.startswith("criar lembrete "):
             remind_at = self.parse_reminder_datetime(text)
+            print('comando de musica detecatado')
 
             title = self.extrair_titulos_lembretes(text)
 
@@ -242,41 +245,39 @@ class Interpreter:
 
         return texto
 
-
-    def extrair_musica(self,texto: str):
-
-        texto = Interpreter.texto_formatado(texto)
-
+    def extrair_musica(self, texto: str):
+        texto = self.texto_formatado(texto)
+        texto = texto.removeprefix("atlas").strip()
         texto = texto.removeprefix("tocar").strip()
+        texto = texto.removeprefix("musica").strip()
+        texto = texto.removeprefix("do ").strip()
+        texto = texto.removeprefix("de ").strip()
 
-        return texto
+        return texto or None
 
-    def extrair_cantor_musica(self,texto: str):
-
-        texto = Interpreter.texto_formatado(texto)
+    def extrair_cantor_musica(self, texto: str):
+        texto = self.texto_formatado(texto)
+        texto = texto.removeprefix("atlas").strip()
         texto = texto.removeprefix("tocar").strip()
+        texto = texto.removeprefix("musica").strip()
 
-        partes = texto.split(" de ", 1)
+        if texto.startswith("de "):
+            return texto.removeprefix("de ").strip() or None
 
-        if len(partes) < 2:
+        if texto.startswith("do "):
+            return texto.removeprefix("do ").strip() or None
+
+        return None
+
+    def comando_de_ativacao(self, texto: str):
+        if not texto:
             return None
 
-        return partes[1].strip()
-
-
-    def comando_de_ativacao(self,texto: str):
         texto = self.texto_formatado(texto)
 
         if texto.startswith("atlas"):
             texto = texto.removeprefix("atlas").strip()
 
-            if not texto:
-                return None
-
-            return texto
-
-        return None
-
-
+        return texto or None
 
 

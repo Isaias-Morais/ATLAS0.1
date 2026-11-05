@@ -5,17 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="&quot;feat: adiciona ativação e reconhecimento de comandos do Atlas&quot;">
-      <change afterPath="$PROJECT_DIR$/frontend/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/ai/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/ai/prompts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/ai/providers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/ai/providers/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/ai/providers/fake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/ai/router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/pytest/test_ai_interpretation_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/pytest/test_ai_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/pytest/test_fake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/ai_interpretation_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/ai_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/interpreter/interpreter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/teste_provide_youtube.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/teste_provide_youtube.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/routes/command_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/command_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/security/jwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/security/jwt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/services/music_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/music_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/teste_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/pytest/teste_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/teste_provide_youtube.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/pytest/teste_provide_youtube.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/music.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/js/voice.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/voice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/teste_atlas_imterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +43,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -50,61 +67,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000001414168254" />
-      <entry key="S5" value="1.0042852831044546" />
-      <entry key="S10" value="1.1474023097424577" />
-      <entry key="S30" value="2.833705577943705" />
-      <entry key="S60" value="4.94469068464664" />
-      <entry key="M2" value="7.284758285904174" />
-      <entry key="M5" value="9.865047974719511" />
-      <entry key="M10" value="11.593534652172604" />
-      <entry key="M15" value="13.017991721866933" />
-      <entry key="M30" value="20.837486431492028" />
-      <entry key="H1" value="47.847838041265426" />
-      <entry key="H2" value="116.36416690886527" />
-      <entry key="H4" value="280.2595971230153" />
-      <entry key="D1" value="1412.0065449591068" />
-      <entry key="W1" value="2231.6228571733113" />
+      <entry key="MS100" value="3.374113548278977E-132" />
+      <entry key="MS500" value="5.077289689367998E-27" />
+      <entry key="S2" value="2.7083554020729345E-7" />
+      <entry key="S5" value="0.0031289843802044187" />
+      <entry key="S10" value="0.0963210772647009" />
+      <entry key="S30" value="1.1757234808995063" />
+      <entry key="S60" value="3.1894765893772417" />
+      <entry key="M2" value="8.193537217156557" />
+      <entry key="M5" value="18.241138038433174" />
+      <entry key="M10" value="25.2775336198946" />
+      <entry key="M15" value="29.782140005267667" />
+      <entry key="M30" value="45.35500106943584" />
+      <entry key="H1" value="86.72689343371968" />
+      <entry key="H2" value="158.9830260452951" />
+      <entry key="H4" value="237.70909544119476" />
+      <entry key="D1" value="1000.9389799096454" />
+      <entry key="W1" value="2632.7207953695715" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.3912386369102164E-273" />
-      <entry key="MS500" value="2.683393898765781E-55" />
-      <entry key="S2" value="2.4021631873439162E-14" />
-      <entry key="S5" value="4.587830171881637E-6" />
-      <entry key="S10" value="0.0029210980542133634" />
-      <entry key="S30" value="0.24210997128385345" />
-      <entry key="S60" value="0.8014882951972692" />
-      <entry key="M2" value="1.5210549548964951" />
-      <entry key="M5" value="2.33688101464272" />
-      <entry key="M10" value="2.8853242198623033" />
-      <entry key="M15" value="3.3121701994528383" />
-      <entry key="M30" value="5.263251551135473" />
-      <entry key="H1" value="10.87262906570981" />
-      <entry key="H2" value="25.46733709218955" />
-      <entry key="H4" value="63.51144253739379" />
-      <entry key="D1" value="282.0385634909187" />
-      <entry key="W1" value="418.8345339244826" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000003752502" />
+      <entry key="S5" value="1.0004263128020154" />
+      <entry key="S10" value="1.0206473459567922" />
+      <entry key="S30" value="1.2762134776222183" />
+      <entry key="S60" value="1.584017219100045" />
+      <entry key="M2" value="2.0693951648369007" />
+      <entry key="M5" value="2.8699142337745984" />
+      <entry key="M10" value="3.4381761607471204" />
+      <entry key="M15" value="3.9907358354131954" />
+      <entry key="M30" value="6.516003220914797" />
+      <entry key="H1" value="12.70070833599322" />
+      <entry key="H2" value="21.913609861198097" />
+      <entry key="H4" value="30.979763332423975" />
+      <entry key="D1" value="154.09666877218973" />
+      <entry key="W1" value="430.0006425068718" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.343230963187204E-4" />
-      <entry key="MS500" value="0.2215954247987168" />
-      <entry key="S2" value="0.6861044952936901" />
-      <entry key="S5" value="0.8639192844165745" />
-      <entry key="S10" value="1.0685274017368451" />
-      <entry key="S30" value="3.0070817199467905" />
-      <entry key="S60" value="5.680047488319073" />
-      <entry key="M2" value="8.752248946954088" />
-      <entry key="M5" value="12.170805493139598" />
-      <entry key="M10" value="14.460116571133197" />
-      <entry key="M15" value="16.316289043492773" />
-      <entry key="M30" value="26.091358200229543" />
-      <entry key="H1" value="58.71168982076169" />
-      <entry key="H2" value="141.81983740966595" />
-      <entry key="H4" value="343.7550406338731" />
-      <entry key="D1" value="1694.0330821596021" />
-      <entry key="W1" value="2650.4548435407805" />
+      <entry key="MS100" value="0.007340021478234465" />
+      <entry key="MS500" value="0.3742307466981728" />
+      <entry key="S2" value="0.7821408544479683" />
+      <entry key="S5" value="0.9094594260604583" />
+      <entry key="S10" value="1.0609963605847648" />
+      <entry key="S30" value="2.4035618312888714" />
+      <entry key="S60" value="4.723754412763139" />
+      <entry key="M2" value="10.185207593149347" />
+      <entry key="M5" value="21.01538287512869" />
+      <entry key="M10" value="28.64150072251515" />
+      <entry key="M15" value="33.713148746548875" />
+      <entry key="M30" value="51.82920427584189" />
+      <entry key="H1" value="99.39707584705367" />
+      <entry key="H2" value="180.87514319824612" />
+      <entry key="H4" value="268.67514199889916" />
+      <entry key="D1" value="1155.0277667105092" />
+      <entry key="W1" value="3062.718597764567" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -162,13 +179,14 @@
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\frontend\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend\app\ai\providers" />
+      <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend\app\pytest" />
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend\app" />
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\frontend\js" />
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS" />
-      <recent name="C:\Users\isaia\PycharmProjects\ATLAS\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="Python.interpreter">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ATLAS/frontend/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -215,7 +233,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/teste_command.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\isaia\PycharmProjects\ATLAS\backend\app\pytest\teste_command.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,7 +270,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.341" />
+        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
       </set>
     </attachedChunks>
   </component>
@@ -296,6 +314,16 @@
       <workItem from="1791092928660" duration="856000" />
       <workItem from="1791144692739" duration="4035000" />
       <workItem from="1791313471303" duration="10664000" />
+      <workItem from="1791415399953" duration="7619000" />
+      <workItem from="1791581790817" duration="1050000" />
+      <workItem from="1791949861142" duration="1287000" />
+      <workItem from="1792013044486" duration="3731000" />
+      <workItem from="1792104973448" duration="6168000" />
+      <workItem from="1792269045936" duration="25129000" />
+      <workItem from="1792452361915" duration="5329000" />
+      <workItem from="1792531257043" duration="599000" />
+      <workItem from="1793561134290" duration="1448000" />
+      <workItem from="1793639759313" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="remider completo">
       <option name="closed" value="true" />

@@ -14,6 +14,9 @@ class Dispatcher:
 
     def dispatch(self,db:session, command:CommandSchema,user_id:int):
 
+        if command is None:
+                return {"status": "error", "message": "Comando inválido ou não reconhecido."}
+
         if command.type == "lembrete":
 
             match command.action:
@@ -53,12 +56,26 @@ class Dispatcher:
                     )
 
         if command.type == "musica":
+            if command.action == "tocar":
+                if not command.data:
+                    return {
+                        "status": "error",
+                        "message": "Faltam os dados da música."
+                    }
 
-            match command.action:
+                if not command.data.musica and not command.data.artist:
+                    return {
+                        "status": "error",
+                        "message": "Preciso do nome da música ou do artista."
+                    }
 
-                case "tocar":
-                    return tocar_musica_service(
-                        musica=command.data.musica,
-                        cantor=command.data.artist
+                musica_id = tocar_musica_service(
+                    musica=command.data.musica,
+                    cantor=command.data.artist
+                )
 
-                    )
+            return {
+                "tipo": "musica",
+                "mensagem": f"{command.data.musica}!",
+                "musica_id": musica_id
+            }

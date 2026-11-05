@@ -8,6 +8,10 @@ def tocar_musica_service(musica:str,cantor:str|None=None):
     if not busca.api_key:
         raise Exception("API key not provided")
 
-    musica_id = busca.busca_musica(musica,cantor)
+    musica_id = busca.busca_musica(musica, cantor)
+
+    if not musica_id:
+        raise ValueError("Nenhuma música encontrada.")
+
 
     return musica_id
