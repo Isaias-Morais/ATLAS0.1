@@ -19,3 +19,18 @@ class IAResponseParser:
 
 
 
+"""
+AIResponseParser:
+
+Responsável por processar as respostas recebidas dos provedores de IA.
+
+- Converte a resposta JSON em dados Python.
+- Valida os dados utilizando o schema Interpretation_AI.
+- Retorna uma interpretação validada.
+- Propaga erros de JSON e validação para a camada responsável pelo tratamento.
+
+Não executa comandos nem decide quais ações podem ser realizadas.
+"""
+
+
+
