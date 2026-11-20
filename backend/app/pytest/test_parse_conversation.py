@@ -2,6 +2,7 @@ import json
 import pytest
 
 
+
 from backend.app.ai.providers.parser import IAResponseParser
 from backend.app.schemas.ai_interpretation_schema import Interpretation_AI
 
