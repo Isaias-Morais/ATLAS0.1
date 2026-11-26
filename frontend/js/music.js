@@ -36,6 +36,9 @@ function onYouTubeIframeAPIReady() {
 
         window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 
+        console.log("Callback registrado:", typeof window.onYouTubeIframeAPIReady);
+        console.log("API disponível:", typeof window.YT);
+
         if (window.YT && window.YT.Player) {
             onYouTubeIframeAPIReady();
     }
