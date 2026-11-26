@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="comecando integracao com &#10;IA">
-      <change beforePath="$PROJECT_DIR$/.idea/ATLAS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATLAS.iml" afterDir="false" />
+    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="feat:atualizando requirements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/music.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Isaias-Morais/ATLAS0.1.git&quot;,
-    &quot;accountId&quot;: &quot;200420ba-f226-45ec-b0dd-343dc917dccd&quot;
+    &quot;accountId&quot;: &quot;93b75ade-b018-4526-83eb-15c60af8a7ec&quot;
   }
 }</component>
   <component name="McpProjectServerCommands">
@@ -55,58 +53,58 @@
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0000000113358907" />
-      <entry key="M2" value="1.0002669482187612" />
-      <entry key="M5" value="1.2891064867163402" />
-      <entry key="M10" value="4.433900302647986" />
-      <entry key="M15" value="9.290958401148428" />
-      <entry key="M30" value="25.121321242145385" />
-      <entry key="H1" value="52.752396483973406" />
-      <entry key="H2" value="86.14035333772335" />
-      <entry key="H4" value="116.25912009311017" />
-      <entry key="D1" value="594.3979704636942" />
-      <entry key="W1" value="2791.23060684724" />
+      <entry key="S5" value="1.000000490478558" />
+      <entry key="S10" value="1.0014887392752554" />
+      <entry key="S30" value="1.429634719704448" />
+      <entry key="S60" value="2.841522823408119" />
+      <entry key="M2" value="4.8322605121117235" />
+      <entry key="M5" value="7.168470581541225" />
+      <entry key="M10" value="10.836139578806899" />
+      <entry key="M15" value="15.714444395726057" />
+      <entry key="M30" value="31.5022514786269" />
+      <entry key="H1" value="59.2155706223197" />
+      <entry key="H2" value="92.93100980414998" />
+      <entry key="H4" value="123.45520711222264" />
+      <entry key="D1" value="601.7402574482118" />
+      <entry key="W1" value="2798.792926597498" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
-      <entry key="S10" value="3.9870004984517905E-232" />
-      <entry key="S30" value="1.3227511849402157E-77" />
-      <entry key="S60" value="6.849383194647419E-39" />
-      <entry key="M2" value="1.829548075508855E-19" />
-      <entry key="M5" value="1.0427662758187091E-7" />
-      <entry key="M10" value="9.435547137541301E-4" />
-      <entry key="M15" value="0.02009849689851846" />
-      <entry key="M30" value="0.448818580391382" />
-      <entry key="H1" value="2.2332764478681573" />
-      <entry key="H2" value="5.1181108585763395" />
-      <entry key="H4" value="8.224029820528811" />
-      <entry key="D1" value="85.75255722233777" />
-      <entry key="W1" value="449.18106660086573" />
+      <entry key="S10" value="3.098814005495371E-236" />
+      <entry key="S30" value="5.644964728331794E-79" />
+      <entry key="S60" value="1.4149562133392902E-39" />
+      <entry key="M2" value="8.315523483969666E-20" />
+      <entry key="M5" value="7.606857567655907E-8" />
+      <entry key="M10" value="8.058908822850833E-4" />
+      <entry key="M15" value="0.018092684704227285" />
+      <entry key="M30" value="0.42583420750422646" />
+      <entry key="H1" value="2.1753409974156925" />
+      <entry key="H2" value="5.051287853226567" />
+      <entry key="H4" value="8.170166199625076" />
+      <entry key="D1" value="85.65869409594468" />
+      <entry key="W1" value="449.1107957587314" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.334481888696528" />
-      <entry key="MS500" value="0.8032939967570338" />
-      <entry key="S2" value="0.9467136312367139" />
-      <entry key="S5" value="0.9783346878195089" />
-      <entry key="S10" value="0.9891080263649208" />
-      <entry key="S30" value="0.9963560800975593" />
-      <entry key="S60" value="0.9981763859808479" />
-      <entry key="M2" value="0.9993397873779543" />
-      <entry key="M5" value="1.287107367860439" />
-      <entry key="M10" value="4.429341283695292" />
-      <entry key="M15" value="9.304205632226573" />
-      <entry key="M30" value="25.56263588440835" />
-      <entry key="H1" value="54.978311393616735" />
-      <entry key="H2" value="91.2524352964348" />
-      <entry key="H4" value="124.4790072896124" />
-      <entry key="D1" value="680.1461623270695" />
-      <entry key="W1" value="3240.408710118781" />
+      <entry key="MS100" value="0.4537595776585804" />
+      <entry key="MS500" value="0.8538177143912449" />
+      <entry key="S2" value="0.9612609283887613" />
+      <entry key="S5" value="0.984320695970312" />
+      <entry key="S10" value="0.9933068075909612" />
+      <entry key="S30" value="1.4074047373105278" />
+      <entry key="S60" value="2.803496611943553" />
+      <entry key="M2" value="4.796005701301922" />
+      <entry key="M5" value="7.145822224013329" />
+      <entry key="M10" value="10.820169282677979" />
+      <entry key="M15" value="15.717959171608312" />
+      <entry key="M30" value="31.916572981860238" />
+      <entry key="H1" value="61.38149598376232" />
+      <entry key="H2" value="97.97521259753059" />
+      <entry key="H4" value="131.62068727235308" />
+      <entry key="D1" value="687.394495437924" />
+      <entry key="W1" value="3247.90074583333" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -121,51 +119,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.login.html.executor": "Run",
-    "JavaScript Debug.teste_atlas imterface.html.executor": "Run",
-    "JavaScript Debug.teste_atlas_imterface.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.api.js.executor": "Run",
-    "Node.js.auth.js.executor": "Run",
-    "Node.js.script.js.executor": "Run",
-    "Python tests.Python tests for backend.app.pytest.test_ai_integration.test_ai_integration.executor": "Run",
-    "Python tests.Python tests for backend.app.pytest.test_prompt_builder.test_criar_snapshot.executor": "Run",
-    "Python tests.Python tests in test_ai_integration.py.executor": "Run",
-    "Python.connection.executor": "Run",
-    "Python.interpreter.executor": "Run",
-    "Python.parser.executor": "Run",
-    "Python.prompts.executor": "Run",
-    "Python.router.executor": "Run",
-    "Python.test_ai_integration.executor": "Run",
-    "Python.teste_command.executor": "Run",
-    "Python.teste_provide_youtube.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "integrando-ia",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/isaia/PycharmProjects/ATLAS0.1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.teste_atlas imterface.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.teste_atlas_imterface.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.api.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.auth.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for backend.app.pytest.test_ai_integration.test_ai_integration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for backend.app.pytest.test_prompt_builder.test_criar_snapshot.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_ai_integration.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.interpreter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prompts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.router.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_ai_integration.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste_command.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste_provide_youtube.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;integrando-ia&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaia/PycharmProjects/ATLAS0.1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\frontend\img" />
@@ -382,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793851521500</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat:atualizando requirements">
+      <option name="closed" value="true" />
+      <created>1795669146875</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1795669146875</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +422,8 @@
     <MESSAGE value="feat: implementa youtube provide" />
     <MESSAGE value="&quot;feat: adiciona ativação e reconhecimento de comandos do Atlas&quot;" />
     <MESSAGE value="comecando integracao com &#10;IA" />
-    <option name="LAST_COMMIT_MESSAGE" value="comecando integracao com &#10;IA" />
+    <MESSAGE value="feat:atualizando requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:atualizando requirements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
