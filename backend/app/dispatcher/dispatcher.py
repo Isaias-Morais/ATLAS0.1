@@ -2,15 +2,15 @@ from sqlalchemy.orm import session
 
 from backend.app.models import user, reminder
 from backend.app.schemas.command_scherma import CommandSchema
-from backend.app.services.music_service import tocar_musica_service
 from backend.app.services.reminder_service import create_reminder_service, get_all_reminders_service, \
     delete_reminder_service,update_reminder_service
 
 
 class Dispatcher:
 
-    def __init__(self, reminder_service=None):
+    def __init__(self, reminder_service=None, music_service=None):
         self.reminder_service = reminder_service
+        self.music_service = music_service
 
     def dispatch(self,db:session, command:CommandSchema,user_id:int):
 
@@ -69,7 +69,7 @@ class Dispatcher:
                         "message": "Preciso do nome da música ou do artista."
                     }
 
-                musica_id = tocar_musica_service(
+                musica_id = self.musica_service.tocar_musica_service(
                     musica=command.data.musica,
                     cantor=command.data.artist
                 )

@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="feat:atualizando requirements">
+    <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="feat:music">
+      <change afterPath="$PROJECT_DIR$/backend/app/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/core/dependencies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/pytest/test_command_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/pytest/test_command_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/command_scherma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/validators/command_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/validators/command_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/js/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/music.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/providers/youtube_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/providers/youtube_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/routes/command_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/command_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/services/music_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/music_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,61 +55,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.955234989427642E-132" />
-      <entry key="S5" value="4.230343522109978E-53" />
-      <entry key="S10" value="1.1026967170465998E-26" />
-      <entry key="S30" value="6.917269276219413E-9" />
-      <entry key="S60" value="2.244864740363663E-4" />
-      <entry key="M2" value="0.05430150460258973" />
-      <entry key="M5" value="2.4273986969653483" />
-      <entry key="M10" value="10.387795603673258" />
-      <entry key="M15" value="18.376236205898763" />
-      <entry key="M30" value="39.072894839280416" />
-      <entry key="H1" value="71.40355122810986" />
-      <entry key="H2" value="110.8140950986818" />
-      <entry key="H4" value="147.02255736349537" />
-      <entry key="D1" value="628.308653318226" />
-      <entry key="W1" value="2828.004366990752" />
+      <entry key="MS100" value="1.0000000001247709" />
+      <entry key="MS500" value="1.0104526359950514" />
+      <entry key="S2" value="1.3508080756116645" />
+      <entry key="S5" value="2.143369829100333" />
+      <entry key="S10" value="3.4420268388887902" />
+      <entry key="S30" value="7.076375187004276" />
+      <entry key="S60" value="9.82575719602889" />
+      <entry key="M2" value="13.3900630131771" />
+      <entry key="M5" value="24.37463600741155" />
+      <entry key="M10" value="37.15995562236556" />
+      <entry key="M15" value="45.701572893165604" />
+      <entry key="M30" value="67.42921600165643" />
+      <entry key="H1" value="107.15235088166307" />
+      <entry key="H2" value="164.21466785730334" />
+      <entry key="H4" value="222.91089698699386" />
+      <entry key="D1" value="722.3574980186705" />
+      <entry key="W1" value="2933.6178585424473" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.000000003463182" />
-      <entry key="S60" value="1.000119223880435" />
-      <entry key="M2" value="1.0236466250934757" />
-      <entry key="M5" value="1.6222548175606457" />
-      <entry key="M10" value="2.9113563255282564" />
-      <entry key="M15" value="3.7970109550779885" />
-      <entry key="M30" value="5.327785009396197" />
-      <entry key="H1" value="7.586396162001561" />
-      <entry key="H2" value="10.830236664568778" />
-      <entry key="H4" value="14.326611991343112" />
-      <entry key="D1" value="91.60020217042414" />
-      <entry key="W1" value="455.3431809889916" />
+      <entry key="MS100" value="1.740824711737855E-31" />
+      <entry key="MS500" value="7.049635886129063E-7" />
+      <entry key="S2" value="0.0319611607716563" />
+      <entry key="S5" value="0.43273717940265816" />
+      <entry key="S10" value="1.3392477695973122" />
+      <entry key="S30" value="3.2437128142663054" />
+      <entry key="S60" value="4.459014578689579" />
+      <entry key="M2" value="6.5662356009707645" />
+      <entry key="M5" value="12.130117633133715" />
+      <entry key="M10" value="17.135326637727292" />
+      <entry key="M15" value="20.057372847083784" />
+      <entry key="M30" value="26.21852354244994" />
+      <entry key="H1" value="34.29356165015341" />
+      <entry key="H2" value="43.0509205970124" />
+      <entry key="H4" value="50.96736893046484" />
+      <entry key="D1" value="130.87038530512774" />
+      <entry key="W1" value="496.33550812239116" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.005262631159631603" />
-      <entry key="MS500" value="0.3501390802218012" />
-      <entry key="S2" value="0.769236966660005" />
-      <entry key="S5" value="0.9003763079179393" />
-      <entry key="S10" value="0.9488816090102807" />
-      <entry key="S30" value="0.9826616652481958" />
-      <entry key="S60" value="0.9916265669869406" />
-      <entry key="M2" value="1.0726413384263955" />
-      <entry key="M5" value="4.0364064950420815" />
-      <entry key="M10" value="13.277018932782726" />
-      <entry key="M15" value="22.149461303620882" />
-      <entry key="M30" value="44.3796092410111" />
-      <entry key="H1" value="78.97384108006736" />
-      <entry key="H2" value="121.6331573753102" />
-      <entry key="H4" value="161.34214946055562" />
-      <entry key="D1" value="719.9039886423179" />
-      <entry key="W1" value="3283.344509791351" />
+      <entry key="MS100" value="9.984155988256146E-5" />
+      <entry key="MS500" value="0.15889635372692654" />
+      <entry key="S2" value="0.8299320676407701" />
+      <entry key="S5" value="2.1504388538854533" />
+      <entry key="S10" value="4.412218530837987" />
+      <entry key="S30" value="10.057369716874533" />
+      <entry key="S60" value="14.08814540972972" />
+      <entry key="M2" value="19.80895753133304" />
+      <entry key="M5" value="36.397720100071034" />
+      <entry key="M10" value="54.21874413548964" />
+      <entry key="M15" value="65.69864986310746" />
+      <entry key="M30" value="93.6067152725011" />
+      <entry key="H1" value="141.41648497327122" />
+      <entry key="H2" value="207.24518056155773" />
+      <entry key="H4" value="273.86533025016945" />
+      <entry key="D1" value="853.2218635094212" />
+      <entry key="W1" value="3429.9501498802297" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -123,55 +124,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.login.html (1).executor": "Run",
-    "JavaScript Debug.login.html.executor": "Run",
-    "JavaScript Debug.teste_atlas imterface.html.executor": "Run",
-    "JavaScript Debug.teste_atlas_imterface.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.api.js.executor": "Run",
-    "Node.js.auth.js.executor": "Run",
-    "Node.js.script.js.executor": "Run",
-    "Python tests.Python tests for backend.app.pytest.test_ai_integration.test_ai_integration.executor": "Run",
-    "Python tests.Python tests for backend.app.pytest.test_command_validator.test_buscar_musica.executor": "Run",
-    "Python tests.Python tests for backend.app.pytest.test_command_validator.test_parar_musica.executor": "Run",
-    "Python tests.Python tests for backend.app.pytest.test_command_validator.test_tocar_musica.executor": "Run",
-    "Python tests.Python tests for backend.app.pytest.test_prompt_builder.test_criar_snapshot.executor": "Run",
-    "Python tests.Python tests in test_ai_integration.py.executor": "Run",
-    "Python.connection.executor": "Run",
-    "Python.interpreter.executor": "Run",
-    "Python.parser.executor": "Run",
-    "Python.prompts.executor": "Run",
-    "Python.router.executor": "Run",
-    "Python.test_ai_integration.executor": "Run",
-    "Python.teste_command.executor": "Run",
-    "Python.teste_provide_youtube.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "integrando-ia",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/isaia/PycharmProjects/ATLAS0.1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.teste_atlas imterface.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.teste_atlas_imterface.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.api.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.auth.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for backend.app.pytest.test_ai_integration.test_ai_integration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for backend.app.pytest.test_command_validator.test_buscar_musica.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for backend.app.pytest.test_command_validator.test_parar_musica.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for backend.app.pytest.test_command_validator.test_tocar_musica.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for backend.app.pytest.test_prompt_builder.test_criar_snapshot.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_ai_integration.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.interpreter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prompts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.router.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_ai_integration.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste_command.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste_provide_youtube.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;integrando-ia&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaia/PycharmProjects/ATLAS0.1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\frontend\img" />
@@ -184,7 +185,7 @@
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for backend.app.pytest.test_command_validator.test_parar_musica">
+  <component name="RunManager" selected="JavaScript Debug.login.html">
     <configuration name="login.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/ATLAS0.1/frontend/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -247,9 +248,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for backend.app.pytest.test_command_validator.test_parar_musica" />
-        <item itemvalue="Python tests.Python tests for backend.app.pytest.test_command_validator.test_tocar_musica" />
-        <item itemvalue="Python tests.Python tests for backend.app.pytest.test_command_validator.test_buscar_musica" />
         <item itemvalue="JavaScript Debug.login.html (1)" />
         <item itemvalue="JavaScript Debug.login.html" />
       </list>
@@ -380,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1795669146875</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat:music">
+      <option name="closed" value="true" />
+      <created>1795749252690</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1795749252690</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +421,8 @@
     <MESSAGE value="&quot;feat: adiciona ativação e reconhecimento de comandos do Atlas&quot;" />
     <MESSAGE value="comecando integracao com &#10;IA" />
     <MESSAGE value="feat:atualizando requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:atualizando requirements" />
+    <MESSAGE value="feat:music" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:music" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

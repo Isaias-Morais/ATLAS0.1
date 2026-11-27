@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, raiseload
 from fastapi import HTTPException
+from backend.app.core.dependencies import get_music_service
 from backend.app.database.connection import get_db
 from backend.app.dispatcher.dispatcher import Dispatcher
 from backend.app.interpreter.interpreter import Interpreter
@@ -16,7 +17,7 @@ router = APIRouter(
 
 validator = CommandValidator()
 interpreter = Interpreter()
-dispatcher = Dispatcher()
+dispatcher = Dispatcher(music_service=get_music_service())
 
 @router.post("/")
 def execute_command( text:CommandRequest,db:Session=Depends(get_db),user_id: int = Depends(get_current_user_id)):

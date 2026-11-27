@@ -1,17 +1,26 @@
 from backend.app.config.config import YOUTUBE_API_KEY
 from backend.app.providers.youtube_provider import YouTubeProvider
-
-def tocar_musica_service(musica:str,cantor:str|None=None):
-
-    busca = YouTubeProvider(YOUTUBE_API_KEY)
-
-    if not busca.api_key:
-        raise Exception("API key not provided")
-
-    musica_id = busca.busca_musica(musica, cantor)
-
-    if not musica_id:
-        raise ValueError("Nenhuma música encontrada.")
+from backend.app.schemas.command_scherma import MusicCommandData
 
 
-    return musica_id
+class MusicService:
+    def __init__(self,provider):
+        self.provider=provider
+
+
+    def tocar_musica_service(self,musica:str,cantor:str):
+
+       return self.busca_musica(musica=musica,cantor=cantor)
+
+
+
+    def busca_musica(self,musica,cantor):
+
+        musica_id = self.provider.busca_musica(musica, cantor)
+
+        if not musica_id:
+            raise ValueError("Nenhuma música encontrada.")
+
+        return musica_id
+
+
