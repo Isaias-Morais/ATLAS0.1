@@ -14,7 +14,7 @@ class ReminderCommandData(BaseModel):
 class MusicCommandData(BaseModel):
     musica: str | None = None
     artist: str | None = None
-    title: str | None = None
+
 
 
 
@@ -28,9 +28,11 @@ class CommandSchema(BaseModel):
 class CommandRequest(BaseModel):
     text:str
 
+#lista Lembrete
 class ListReminderData(BaseModel):
     pass
 
+#CRIA LEMBRETE
 class CreateReminderData(BaseModel):
     title: str
     remind_at: datetime

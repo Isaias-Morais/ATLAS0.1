@@ -74,8 +74,8 @@ class Dispatcher:
                     cantor=command.data.artist
                 )
 
-            return {
-                "tipo": "musica",
-                "mensagem": f"{command.data.musica}!",
-                "musica_id": musica_id
-            }
+                return {
+                    "tipo": "musica",
+                    "mensagem": f"{command.data.musica}!",
+                    "musica_id": musica_id
+                }

@@ -21,15 +21,15 @@ export function tocarMusica(dados){
 
 function onYouTubeIframeAPIReady() {
     if (player) return;
+    console.log("CALLBACK DO YOUTUBE EXECUTADO!");
 
     player = new YT.Player("youtube-player", {
         playerVars: {
             origin: window.location.origin
         },
         events: {
-            onError: (event) => {
-                console.error("Erro do YouTube:", event.data);
-            }
+            onError: (event) => {console.error("Erro do YouTube:", event.data)},
+            onReady: (event) => {console.log("player do youtube esta pronto")}
         }
     });
     }

@@ -1,4 +1,5 @@
-from backend.app.schemas.command_scherma import CommandSchema,CreateReminderData,DeleteReminderData,UpdateReminderData,ListReminderData
+from backend.app.schemas.command_scherma import CommandSchema, CreateReminderData, DeleteReminderData, \
+    UpdateReminderData, ListReminderData, MusicCommandData
 from backend.app.schemas.command_scherma import CreateReminderData,DeleteReminderData,UpdateReminderData,ListReminderData
 
 
@@ -10,7 +11,10 @@ class CommandValidator:
             ("lembrete", "deletar"): DeleteReminderData,
             ("lembrete", "atualizar"): UpdateReminderData,
             ("lembrete", "listar"): ListReminderData,
-        }
+            ("musica", "buscar"):MusicCommandData,
+            ("musica", "tocar"):MusicCommandData,
+            ("musica", "parar"):MusicCommandData
+            }
 
 
     def validate(self, command: CommandSchema) -> CommandSchema:
