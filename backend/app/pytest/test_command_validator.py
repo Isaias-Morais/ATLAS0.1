@@ -75,7 +75,7 @@ def test_tocar_musica():
 
     assert resultado.type == "musica"
     assert resultado.action == "tocar"
-    assert resultado.data.title == "Evidências"
+    assert resultado.data.musica == "Evidências"
 
 
 def test_parar_musica():

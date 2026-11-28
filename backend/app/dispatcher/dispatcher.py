@@ -69,7 +69,7 @@ class Dispatcher:
                         "message": "Preciso do nome da música ou do artista."
                     }
 
-                musica_id = self.musica_service.tocar_musica_service(
+                musica_id = self.music_service.tocar_musica_service(
                     musica=command.data.musica,
                     cantor=command.data.artist
                 )
@@ -79,3 +79,4 @@ class Dispatcher:
                     "mensagem": f"{command.data.musica}!",
                     "musica_id": musica_id
                 }
+

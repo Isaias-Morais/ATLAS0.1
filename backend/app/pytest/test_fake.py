@@ -1,4 +1,5 @@
 import pytest
+import json
 
 from backend.app.ai.providers.fake import FakeAIProvider
 
@@ -8,4 +9,8 @@ async def test_fake_provider():
     fake = FakeAIProvider()
     resultado = await fake.generate('oi')
 
-    assert resultado == "Resposta simulada da IA"
+    dados = json.loads(resultado)
+
+    assert dados["type"] == "conversation"
+    assert dados["message"] == "Olá! Como posso ajudar?"
+    assert dados["command"] is None

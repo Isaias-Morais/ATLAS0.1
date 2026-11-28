@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fec540e-a2dc-411e-a01b-4c6adf4b0079" name="Changes" comment="feat:music">
-      <change afterPath="$PROJECT_DIR$/backend/app/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/core/dependencies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/ai/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/ai/router.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/dispatcher/dispatcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/providers/youtube_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/providers/youtube_provider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/routes/command_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/routes/command_routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/services/music_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/music_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/pytest/test_ai_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/pytest/test_ai_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/pytest/test_ai_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/pytest/test_ai_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/pytest/test_command_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/pytest/test_command_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/pytest/test_fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/pytest/test_fake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/services/ai_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/ai_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Isaias-Morais/ATLAS0.1.git&quot;,
-    &quot;accountId&quot;: &quot;93b75ade-b018-4526-83eb-15c60af8a7ec&quot;
+    &quot;accountId&quot;: &quot;200420ba-f226-45ec-b0dd-343dc917dccd&quot;
   }
 }</component>
   <component name="McpProjectServerCommands">
@@ -55,61 +56,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000001247709" />
-      <entry key="MS500" value="1.0104526359950514" />
-      <entry key="S2" value="1.3508080756116645" />
-      <entry key="S5" value="2.143369829100333" />
-      <entry key="S10" value="3.4420268388887902" />
-      <entry key="S30" value="7.076375187004276" />
-      <entry key="S60" value="9.82575719602889" />
-      <entry key="M2" value="13.3900630131771" />
-      <entry key="M5" value="24.37463600741155" />
-      <entry key="M10" value="37.15995562236556" />
-      <entry key="M15" value="45.701572893165604" />
-      <entry key="M30" value="67.42921600165643" />
-      <entry key="H1" value="107.15235088166307" />
-      <entry key="H2" value="164.21466785730334" />
-      <entry key="H4" value="222.91089698699386" />
-      <entry key="D1" value="722.3574980186705" />
-      <entry key="W1" value="2933.6178585424473" />
+      <entry key="MS100" value="1.0000003082546516" />
+      <entry key="MS500" value="1.0604575488259649" />
+      <entry key="S2" value="1.795905113404855" />
+      <entry key="S5" value="2.524603088597458" />
+      <entry key="S10" value="3.380383105146399" />
+      <entry key="S30" value="5.110359519619273" />
+      <entry key="S60" value="5.969876275043395" />
+      <entry key="M2" value="6.906366926750157" />
+      <entry key="M5" value="8.72436878221199" />
+      <entry key="M10" value="10.138868287200815" />
+      <entry key="M15" value="10.99335322080605" />
+      <entry key="M30" value="15.17388536073952" />
+      <entry key="H1" value="36.289436477976736" />
+      <entry key="H2" value="90.93590670241537" />
+      <entry key="H4" value="168.4090914069771" />
+      <entry key="D1" value="696.7146211598717" />
+      <entry key="W1" value="2927.011439727415" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.740824711737855E-31" />
-      <entry key="MS500" value="7.049635886129063E-7" />
-      <entry key="S2" value="0.0319611607716563" />
-      <entry key="S5" value="0.43273717940265816" />
-      <entry key="S10" value="1.3392477695973122" />
-      <entry key="S30" value="3.2437128142663054" />
-      <entry key="S60" value="4.459014578689579" />
-      <entry key="M2" value="6.5662356009707645" />
-      <entry key="M5" value="12.130117633133715" />
-      <entry key="M10" value="17.135326637727292" />
-      <entry key="M15" value="20.057372847083784" />
-      <entry key="M30" value="26.21852354244994" />
-      <entry key="H1" value="34.29356165015341" />
-      <entry key="H2" value="43.0509205970124" />
-      <entry key="H4" value="50.96736893046484" />
-      <entry key="D1" value="130.87038530512774" />
-      <entry key="W1" value="496.33550812239116" />
+      <entry key="MS100" value="1.7415735490550498E-78" />
+      <entry key="MS500" value="2.806650686199689E-16" />
+      <entry key="S2" value="1.2943361800579764E-4" />
+      <entry key="S5" value="0.02784959195593079" />
+      <entry key="S10" value="0.16688197013437608" />
+      <entry key="S30" value="0.5505580783093694" />
+      <entry key="S60" value="0.7419960096338025" />
+      <entry key="M2" value="0.8613933616673147" />
+      <entry key="M5" value="0.9473145760301287" />
+      <entry key="M10" value="1.0649869838112294" />
+      <entry key="M15" value="1.268186409267329" />
+      <entry key="M30" value="2.794272856574331" />
+      <entry key="H1" value="9.209324451862287" />
+      <entry key="H2" value="22.03017402430972" />
+      <entry key="H4" value="37.05037693506392" />
+      <entry key="D1" value="125.46694523061333" />
+      <entry key="W1" value="494.6709065167791" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.984155988256146E-5" />
-      <entry key="MS500" value="0.15889635372692654" />
-      <entry key="S2" value="0.8299320676407701" />
-      <entry key="S5" value="2.1504388538854533" />
-      <entry key="S10" value="4.412218530837987" />
-      <entry key="S30" value="10.057369716874533" />
-      <entry key="S60" value="14.08814540972972" />
-      <entry key="M2" value="19.80895753133304" />
-      <entry key="M5" value="36.397720100071034" />
-      <entry key="M10" value="54.21874413548964" />
-      <entry key="M15" value="65.69864986310746" />
-      <entry key="M30" value="93.6067152725011" />
-      <entry key="H1" value="141.41648497327122" />
-      <entry key="H2" value="207.24518056155773" />
-      <entry key="H4" value="273.86533025016945" />
-      <entry key="D1" value="853.2218635094212" />
-      <entry key="W1" value="3429.9501498802297" />
+      <entry key="MS100" value="3.362767042172854E-5" />
+      <entry key="MS500" value="0.14687646328662354" />
+      <entry key="S2" value="1.2271416197950262" />
+      <entry key="S5" value="2.2323573462022113" />
+      <entry key="S10" value="3.3170206830795763" />
+      <entry key="S30" value="5.519762323685991" />
+      <entry key="S60" value="6.624016368535112" />
+      <entry key="M2" value="7.717999209940794" />
+      <entry key="M5" value="9.649881522330697" />
+      <entry key="M10" value="11.192411498836075" />
+      <entry key="M15" value="12.253531368757942" />
+      <entry key="M30" value="17.96210699375062" />
+      <entry key="H1" value="45.49026767872782" />
+      <entry key="H2" value="112.95544565233199" />
+      <entry key="H4" value="205.4500017784905" />
+      <entry key="D1" value="822.1757920072869" />
+      <entry key="W1" value="3421.679139427319" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -124,55 +125,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.login.html (1).executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.teste_atlas imterface.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.teste_atlas_imterface.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.api.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.auth.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.script.js.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for backend.app.pytest.test_ai_integration.test_ai_integration.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for backend.app.pytest.test_command_validator.test_buscar_musica.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for backend.app.pytest.test_command_validator.test_parar_musica.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for backend.app.pytest.test_command_validator.test_tocar_musica.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for backend.app.pytest.test_prompt_builder.test_criar_snapshot.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_ai_integration.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.connection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.interpreter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.parser.executor&quot;: &quot;Run&quot;,
-    &quot;Python.prompts.executor&quot;: &quot;Run&quot;,
-    &quot;Python.router.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_ai_integration.executor&quot;: &quot;Run&quot;,
-    &quot;Python.teste_command.executor&quot;: &quot;Run&quot;,
-    &quot;Python.teste_provide_youtube.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;integrando-ia&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/isaia/PycharmProjects/ATLAS0.1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.login.html (1).executor": "Run",
+    "JavaScript Debug.login.html.executor": "Run",
+    "JavaScript Debug.teste_atlas imterface.html.executor": "Run",
+    "JavaScript Debug.teste_atlas_imterface.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.api.js.executor": "Run",
+    "Node.js.auth.js.executor": "Run",
+    "Node.js.script.js.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_ai_integration.test_ai_integration.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_ai_router.test_ai_router.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_ai_service.test_ai_service.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_command_validator.test_buscar_musica.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_command_validator.test_parar_musica.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_command_validator.test_tocar_musica.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_fake.test_fake_provider.executor": "Run",
+    "Python tests.Python tests for backend.app.pytest.test_prompt_builder.test_criar_snapshot.executor": "Run",
+    "Python tests.Python tests in test_ai_integration.py.executor": "Run",
+    "Python.connection.executor": "Run",
+    "Python.interpreter.executor": "Run",
+    "Python.parser.executor": "Run",
+    "Python.prompts.executor": "Run",
+    "Python.router.executor": "Run",
+    "Python.test_ai_integration.executor": "Run",
+    "Python.teste_command.executor": "Run",
+    "Python.teste_provide_youtube.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "integrando-ia",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/isaia/PycharmProjects/ATLAS0.1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS\frontend\img" />
@@ -185,14 +189,14 @@
       <recent name="C:\Users\isaia\PycharmProjects\ATLAS" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login.html">
+  <component name="RunManager" selected="JavaScript Debug.login.html (1)">
     <configuration name="login.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/ATLAS0.1/frontend/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ATLAS/frontend/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for backend.app.pytest.test_command_validator.test_buscar_musica" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for backend.app.pytest.test_ai_router.test_ai_router" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ATLAS" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,11 +210,11 @@
       <option name="RUN_TOOL" value="" />
       <option name="RUN_AS_SCRIPT" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;backend.app.pytest.test_command_validator.test_buscar_musica&quot;" />
+      <option name="_new_target" value="&quot;backend.app.pytest.test_ai_router.test_ai_router&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for backend.app.pytest.test_command_validator.test_parar_musica" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for backend.app.pytest.test_ai_service.test_ai_service" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ATLAS" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,11 +228,11 @@
       <option name="RUN_TOOL" value="" />
       <option name="RUN_AS_SCRIPT" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;backend.app.pytest.test_command_validator.test_parar_musica&quot;" />
+      <option name="_new_target" value="&quot;backend.app.pytest.test_ai_service.test_ai_service&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for backend.app.pytest.test_command_validator.test_tocar_musica" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for backend.app.pytest.test_fake.test_fake_provider" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ATLAS" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,7 +246,7 @@
       <option name="RUN_TOOL" value="" />
       <option name="RUN_AS_SCRIPT" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;backend.app.pytest.test_command_validator.test_tocar_musica&quot;" />
+      <option name="_new_target" value="&quot;backend.app.pytest.test_fake.test_fake_provider&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -256,7 +260,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-56aff7b04f6f-JavaScript-WS-263.7307.202" />
+        <option value="bundled-python-sdk-9e1d95ea72ba-e0583fc556d1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-263.7307.329" />
       </set>
     </attachedChunks>
   </component>
@@ -313,6 +317,7 @@
       <workItem from="1795644987051" duration="12775000" />
       <workItem from="1795743860995" duration="310000" />
       <workItem from="1795745103853" duration="2154000" />
+      <workItem from="1795835254953" duration="6118000" />
     </task>
     <task id="LOCAL-00001" summary="remider completo">
       <option name="closed" value="true" />
@@ -436,7 +441,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ATLAS0_1$.coverage" NAME=" Coverage Results" MODIFIED="1795748304388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ATLAS0_1$.coverage" NAME=" Coverage Results" MODIFIED="1795841263291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ATLAS0_1$test_ai_integration.coverage" NAME="test_ai_integration Coverage Results" MODIFIED="1795657758036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/app/pytest" />
     <SUITE FILE_PATH="coverage/ATLAS0_1$teste_command.coverage" NAME="teste_command Coverage Results" MODIFIED="1789256684325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/app" />
   </component>
